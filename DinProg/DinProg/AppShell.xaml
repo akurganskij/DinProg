@@ -81,9 +81,11 @@
     <FlyoutItem Title="Main">
         <ShellContent>
             <ContentPage>
-                <StackLayout>
-                    <Label />
-                    <Button Clicked="Button_Clicked"/>
+                <StackLayout VerticalOptions="Center">
+                    <Label Text="Хочеш вивчити динамічне програмування?" FontSize="{x:OnPlatform UWP=60, Android=50}" HorizontalTextAlignment="Center" FontAttributes="Bold"/>
+                    <Label Text="Тоді сміло натискай кнопку внизу" FontSize="{x:OnPlatform UWP=50, Android=40}" HorizontalTextAlignment="Center"/>
+                    <Line  Margin="10"/>
+                    <Button Clicked="Button_Clicked" Text="Розпочати" FontSize="Large"/>
                 </StackLayout>
             </ContentPage>
         </ShellContent>

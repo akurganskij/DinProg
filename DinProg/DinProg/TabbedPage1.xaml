@@ -12,7 +12,7 @@
                    Text="Одним з основних типів задач з програмування є задачі на оптимізацію, у яких треба знайти мінімальну кількість, оптимальний хід, кількість маршрутів та ін. Майже всі задачі" />
         </StackLayout>
     </ContentPage>
-    <ContentPage Title="Task" >
+    <ContentPage Title="Tasks" >
         
     </ContentPage>
 </TabbedPage>
