@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DinProg.TabbedPage1"
+             BarBackgroundColor="#9ceac4">
+  <!--Pages can be added as references or inline-->
+ 
+    <ContentPage Title="Theory">
+        <StackLayout>
+            <Label Text="Поняття про дінамічне програмування" FontSize="Title" HorizontalTextAlignment="Center"/>
+            <Label Margin="7" FontSize="Body"
+                   Text="Одним з основних типів задач з програмування є задачі на оптимізацію, у яких треба знайти мінімальну кількість, оптимальний хід, кількість маршрутів та ін. Майже всі задачі" />
+        </StackLayout>
+    </ContentPage>
+    <ContentPage Title="Task" >
+        
+    </ContentPage>
+</TabbedPage>

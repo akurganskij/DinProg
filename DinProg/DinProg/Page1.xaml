@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DinProg.Page1">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#41C9F1" >
+            <ScrollView >
+            <Grid Margin="5,5">
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition Height=".4*"/>
+                    <RowDefinition />
+                    <RowDefinition Height=".4*"/>
+                    <RowDefinition />
+                    <RowDefinition Height=".4*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition />
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition />
+                    <ColumnDefinition Width="2*"/>
+                </Grid.ColumnDefinitions>
+                
+                <StackLayout Grid.Column="0" Grid.Row="0">
+                    <Button Clicked="Button1_Clicked" ImageSource="index.png" BackgroundColor="Transparent"/>
+                    <Label Text="Рівень 0" HorizontalTextAlignment="Center" TextColor="DarkBlue" FontSize="Medium"/>
+                </StackLayout>
+                <StackLayout Grid.Column="2" Grid.Row="0">
+                    <Button ImageSource="index.png" BackgroundColor="Transparent"/>
+                    <Label Text="Рівень 1" HorizontalTextAlignment="Center" TextColor="DarkBlue" FontSize="Medium"/>
+                </StackLayout>
+                <StackLayout Grid.Column="4" Grid.Row="0">
+                    <Button ImageSource="index.png" BackgroundColor="Transparent"/>
+                    <Label Text="Рівень 2" HorizontalTextAlignment="Center" TextColor="DarkBlue" FontSize="Medium"/>
+                </StackLayout>
+                <StackLayout Grid.Column="0" Grid.Row="2">
+                    <Button ImageSource="index.png" BackgroundColor="Transparent"/>
+                    <Label Text="Рівень 3" HorizontalTextAlignment="Center" TextColor="DarkBlue" FontSize="Medium"/>
+                </StackLayout>
+                <StackLayout Grid.Column="2" Grid.Row="2">
+                    <Button ImageSource="index.png" BackgroundColor="Transparent"/>
+                    <Label Text="Рівень 4" HorizontalTextAlignment="Center" TextColor="DarkBlue" FontSize="Medium"/>
+                </StackLayout>
+                <StackLayout Grid.Column="4" Grid.Row="2">
+                    <Button ImageSource="index.png" BackgroundColor="Transparent"/>
+                    <Label Text="Рівень 5" HorizontalTextAlignment="Center" TextColor="DarkBlue" FontSize="Medium"/>
+                </StackLayout>
+                <StackLayout Grid.Column="0" Grid.Row="4">
+                    <Button ImageSource="index.png" BackgroundColor="Transparent"/>
+                    <Label Text="Рівень 6" HorizontalTextAlignment="Center" TextColor="DarkBlue" FontSize="Medium"/>
+                </StackLayout>
+                <StackLayout Grid.Column="2" Grid.Row="4">
+                    <Button ImageSource="index.png" BackgroundColor="Transparent"/>
+                    <Label Text="Рівень 7" HorizontalTextAlignment="Center" TextColor="DarkBlue" FontSize="Medium"/>
+                </StackLayout>
+                <StackLayout Grid.Column="4" Grid.Row="4">
+                    <Button ImageSource="index.png" BackgroundColor="Transparent"/>
+                    <Label Text="Рівень 8" HorizontalTextAlignment="Center" TextColor="DarkBlue" FontSize="Medium"/>
+                </StackLayout>
+                    <StackLayout Grid.Column="0" Grid.Row="6">
+                        <Button ImageSource="index.png" BackgroundColor="Transparent"/>
+                        <Label Text="Рівень 9" HorizontalTextAlignment="Center" TextColor="DarkBlue" FontSize="Medium"/>
+                    </StackLayout>
+                    <StackLayout Grid.Column="2" Grid.Row="6">
+                        <Button ImageSource="index.png" BackgroundColor="Transparent"/>
+                        <Label Text="Рівень 10" HorizontalTextAlignment="Center" TextColor="DarkBlue" FontSize="Medium"/>
+                    </StackLayout>
+                    <StackLayout Grid.Column="4" Grid.Row="6">
+                        <Button ImageSource="index.png" BackgroundColor="Transparent"/>
+                        <Label Text="Рівень 11" HorizontalTextAlignment="Center" TextColor="DarkBlue" FontSize="Medium"/>
+                    </StackLayout>
+                </Grid>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
