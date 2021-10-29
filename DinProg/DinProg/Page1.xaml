@@ -63,11 +63,11 @@
                         <Label Text="Рівень 9" HorizontalTextAlignment="Center" TextColor="DarkBlue" FontSize="Medium"/>
                     </StackLayout>
                     <StackLayout Grid.Column="2" Grid.Row="6">
-                        <Button ImageSource="index.png" BackgroundColor="Transparent" />
+                        <Button ImageSource="index.png" BackgroundColor="Transparent" Clicked="Button11_Clicked"/>
                         <Label Text="Рівень 10" HorizontalTextAlignment="Center" TextColor="DarkBlue" FontSize="Medium"/>
                     </StackLayout>
                     <StackLayout Grid.Column="4" Grid.Row="6">
-                        <Button ImageSource="index.png" BackgroundColor="Transparent"/>
+                        <Button ImageSource="index.png" BackgroundColor="Transparent" Clicked="Button12_Clicked"/>
                         <Label Text="Рівень 11" HorizontalTextAlignment="Center" TextColor="DarkBlue" FontSize="Medium"/>
                     </StackLayout>
                 </Grid>

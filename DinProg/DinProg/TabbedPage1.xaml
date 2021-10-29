@@ -4,15 +4,42 @@
              x:Class="DinProg.TabbedPage1"
              BarBackgroundColor="#9ceac4">
   <!--Pages can be added as references or inline-->
- 
-    <ContentPage Title="Theory">
-        <StackLayout>
-            <Label Text="Поняття про дінамічне програмування" FontSize="Title" HorizontalTextAlignment="Center"/>
-            <Label Margin="7" FontSize="Body"
-                   Text="Одним з основних типів задач з програмування є задачі на оптимізацію, у яких треба знайти мінімальну кількість, оптимальний хід, кількість маршрутів та ін. Майже всі задачі" />
-        </StackLayout>
+
+    <ContentPage Title="Короткі відомості">
+        <ScrollView>
+            <StackLayout>
+                <Label Text="Початкові відомості про динамічне програмування." FontSize="Title" HorizontalTextAlignment="Center"/>
+                <Label Margin="7" FontSize="Medium" Text=" У програмуванні часто трапляються задачі на оптимізацію та задачі, у яких, щоб обрахувати число, треба обрахувати менші числа таким самим чином, як велике. Найбільш класичним прикладом такої задачі є знаходження чисел Фібоначчі. Існує 2 основних підходи до розв'язку таких задач – рекурсія і динамічне програмування. Спершу згадаємо, як вони визначаються:
+                &#10;F(n) = F(n-1) + F(n-2), n > 2, F(0) = 0, F(1) = 1
+                &#10;Кожне число Фібоначчі це сума двох попередніх, а перші два це 0 і 1. Розв'яжемо цю задачу."/>
+                <Label Margin="7" FontSize="Medium" HorizontalTextAlignment="Center" Text="Рекурсія" />
+                <Label Margin="7" FontSize="Medium">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text="Почнемо з визначення." />
+                                <Span FontSize="Medium" Text="Рекурсія – процес, у якому функція визиває сама себе." FontAttributes="Bold" />
+                                <Span Text="Наведемо дерево рекурсивних викликів функції для знаходження шостого числа Фібоначчі:"/>
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Label Margin="7" FontSize="Medium" Text="Як можна побачити друге число Фібоначчі треба обраховувати 5 разів! І ось на цьому місці повинно виникати питання, яким чином можна обраховувати усі числа Фібоначчі лише один раз. Для цього треба використати динамічне програмування."/>
+                <Label Margin="7" FontSize="Medium" HorizontalTextAlignment="Center" Text="Динамічне програмування"/>
+                <Label Margin="7" FontSize="Medium" FontAttributes="Bold" Text="Динамічне програмування (скорочено ДП) – метод розв'язку оптимізаційних задач шляхом розбиття їх на більш прості. "/>
+                <Label Margin="7" FontSize="Medium" Text="Перш ніж ми перейдемо до розгляду оптимального розв'язку нашої задачі, треба розібратися з такими поняттями, як техніки табуляції і мемоізації."/>
+                <Label Margin="7" FontSize="Medium" FontAttributes="Bold" Text="Табуляція (або ДП «знизу-вгору») – техніка ДП, коли починаємо розв'язувати задачу з тривіальних значень і потім, крок за кроком, наближаємось до відповіді."/>
+                <Label Margin="7" FontSize="Medium" FontAttributes="Bold" Text="Мемоізація (або ДП «зверху-вниз») – техніка ДП, коли починаємо розв'язувати задачу з питомого значення і, потім доходимо до тривіальних, запам'ятовуючи кожний отриманий результат."/>
+                <Label Margin="7" FontSize="Medium" Text="Повернемось до розв'язку задачі. Скористаємось методом табуляції – заповнимо масив починаючи зі значень 0, 1, і потім за формулою, до тих пір поки не знайдемо потрібне число Фібоначчі."/>
+                <Label Text="Перелічимо класичні задачі динамічного програмування:"/>
+                <ListView>
+                    
+                </ListView>
+            </StackLayout>
+        </ScrollView>
+        
     </ContentPage>
-    <ContentPage Title="Tasks" >
+    <ContentPage Title="Завдання" >
         
     </ContentPage>
 </TabbedPage>
