@@ -30,16 +30,77 @@
                 <Label Margin="7" FontSize="Medium" Text="Перш ніж ми перейдемо до розгляду оптимального розв'язку нашої задачі, треба розібратися з такими поняттями, як техніки табуляції і мемоізації."/>
                 <Label Margin="7" FontSize="Medium" FontAttributes="Bold" Text="Табуляція (або ДП «знизу-вгору») – техніка ДП, коли починаємо розв'язувати задачу з тривіальних значень і потім, крок за кроком, наближаємось до відповіді."/>
                 <Label Margin="7" FontSize="Medium" FontAttributes="Bold" Text="Мемоізація (або ДП «зверху-вниз») – техніка ДП, коли починаємо розв'язувати задачу з питомого значення і, потім доходимо до тривіальних, запам'ятовуючи кожний отриманий результат."/>
-                <Label Margin="7" FontSize="Medium" Text="Повернемось до розв'язку задачі. Скористаємось методом табуляції – заповнимо масив починаючи зі значень 0, 1, і потім за формулою, до тих пір поки не знайдемо потрібне число Фібоначчі."/>
-                <Label Text="Перелічимо класичні задачі динамічного програмування:"/>
-                <ListView>
-                    
-                </ListView>
+                <Label Margin="7" FontSize="Medium" Text="Повернемось до розв'язку задачі. Скористаємось технікою табуляції – заповнимо масив починаючи зі значень 0, 1, і потім за формулою, до тих пір поки не знайдемо потрібне число Фібоначчі."/>
+                <Label Margin="7" FontSize="Medium" Text="Перелічимо класичні задачі динамічного програмування:"/>
+                <Label Margin="7" FontSize="Medium" Text="1)	Задачі на заповнення лінійних масивів
+                            &#10;2)	Задачі на пошук екстремального шляху
+                            &#10;3)	Задачі на знаходження найбільшої спільної підпослідовності
+                            &#10;4)	Задачі на знаходження найбільшої закономірної спільної підпослідовності
+                            &#10;5)	Задачі на знаходження редакційної відстані
+                            &#10;6)	Задачі «про рюкзак»
+                            &#10;7)	Задачі про порядок перемноження матриць
+                            &#10;8)	Задачі на алгоритм Флойда-Уоршелла
+                            &#10;9)	Задачі на алгоритм Беллмана-Форда
+                            &#10;10)	Задачі на знаходження максимальної незалежної кількості вершин у дереві"/>
+                <Label Margin="7" FontSize="Medium" Text="Задачі 7 – 10 будуть розглядатись у подальших курсах, через те, що для їх вивчення необхідні знання з вищої та дискретної математики. "/>
+                <Line />
             </StackLayout>
         </ScrollView>
         
     </ContentPage>
     <ContentPage Title="Завдання" >
-        
+        <ScrollView>
+            <StackLayout>
+                <Frame>
+                    <StackLayout>
+                        <Label Margin="7" FontSize="Medium" Text="1)	Для чого використовують ДП?"/>
+                        <RadioButton Content="розв'язання задач на оптимізацію." x:Name="task1"/>
+                        <RadioButton Content="розв'язання задач на матриці." />
+                        <RadioButton Content="розв'язання задач на рекурсію." />
+                    </StackLayout>
+                </Frame>
+
+                <Frame>
+                    <StackLayout>
+                        <Label Margin="7" FontSize="Medium" Text="2)	Мемоізація – це ДП…"/>
+                        <RadioButton Content="«знизу-вгору»" />
+                        <RadioButton Content="«зверху-вниз»" x:Name="task2"/>
+                        <RadioButton Content="навпаки" />
+                    </StackLayout>
+                </Frame>
+
+                <Frame>
+                    <StackLayout>
+                        <Label Margin="7" FontSize="Medium" Text="3)	Табуляція – це ДП…"/>
+                        <RadioButton Content="«знизу-вгору»" x:Name="task3"/>
+                        <RadioButton Content="«зверху-вниз»" />
+                        <RadioButton Content="навпаки" />
+                    </StackLayout>
+                </Frame>
+
+                <Frame>
+                    <StackLayout>
+                        <Label Margin="7" FontSize="Medium" Text="4)	Рекурсивна формула для чисел Фібоначчі"/>
+                        <RadioButton Content="F(n) = F(n-1) + F(n-2)" FontSize="Body" />
+                        <RadioButton Content="F(n) = F(n-1) + F(n-3), n > 2, F(0) = 0, F(1) = 1" FontSize="Body" />
+                        <RadioButton Content="F(n) = F(n-1) + F(n-2), n > 2, F(0) = 0, F(1) = 1" FontSize="Body" x:Name="task4"/>
+                        
+                    </StackLayout>
+                </Frame>
+
+                <Frame>
+                    <StackLayout>
+                        <Label Margin="7" FontSize="Medium" Text="5)	Що з цього не є класичною задачею ДП?"/>
+                        <RadioButton Content="Задачі «про рюкзак»" FontSize="Body" />
+                        <RadioButton Content="Задачі на мінімальний елемент в масиві" FontSize="Body" x:Name="task5"/>
+                        <RadioButton Content="Задачі на знаходження редакційної відстані" FontSize="Body" />
+                        
+                </StackLayout>
+                </Frame>
+                <Label Margin="7" FontSize="Medium" x:Name="ResLabel" />
+                <Button Text="Перевірити" Clicked="Button_Clicked"/>
+                <Line />
+            </StackLayout>
+        </ScrollView>
     </ContentPage>
 </TabbedPage>

@@ -4,12 +4,300 @@
              x:Class="DinProg.TabbedPage2"
             BarBackgroundColor="#9ceac4">
   <!--Pages can be added as references or inline-->
-    <ContentPage Title="Theory">
-        <StackLayout>
-            <Label Text="" />
-        </StackLayout>
+    <ContentPage Title="Короткі відомості">
+        <ScrollView>
+            <StackLayout>
+                <Label Margin="7" FontSize="Large" FontAttributes="Bold" HorizontalTextAlignment="Center" Text="Заповнення лінійного масиву, знаходження рекурсивної формули." />
+                <Label Margin="7" FontSize="Medium" Text="На попередньому рівні вже траплялася задача, у якій треба було заповнювати саме лінійний масив. Розглянемо більш детально деякі особливості. Перше, на що треба звернути увагу – у деяких задачах нумерація починається від 0, а у деяких з 1. У першому випадку треба заповнювати до N-го елементу включно, розмір масиву дорівнює  N + 1, у другому – до  N – 1-го елементу, розмір масиву – N. Також варто зазначити, що заповнення масиву починається з тривіальних значень у будь-якому методі. Метод мемоізації просто йде від більших значень але спочатку обчислюються менші значення. "/>
+                <Label Margin="7" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center" Text="Розглянемо задачу «Одиниці»"/>
+                <Label Margin="7" FontSize="Medium" Text="В арифметичному виразі дозволяється використовувати число 1, операції додавання, множення та дужки. Яку мінімальну кількість одиниць потрібно використати, щоб отримати задане натуральне число n?"/>
+                <Label Margin="7" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center" Text="Вхідні дані" />
+                <Label Margin="7" FontSize="Medium" Text="Одне число n (1 ≤ n ≤ 5000)." />
+                <Label Margin="7" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center" Text="Вихідні дані" />
+                <Label Margin="7" FontSize="Medium" Text="Шукана кількість одиниць." />
+                <Label Margin="7" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center" Text="Розв'язок" />
+                <Label Margin="7" FontSize="Medium" Text="Одразу зрозумілим є тривіальний розв'язок для 1 – 1. Отже як знайти інші? Перша стратегія – додавати 1 до кожного наступного числа. Ця стратегія є правильною лише для простих чисел, для інших не завжди це справджується, бо дозволена операція множення, тому треба передивитись кожен простий множник числа до кореня з числа включно і знайти суму кількості одиниць для цього множника і частки числа і множника, серед усіх можливих випадків треба обрати найменший." />
+                <Label Margin="7" FontSize="Medium" Text="Перейдемо до другої частини теми - знаходження рекурсивної формули. Розберемо цю тему на прикладі наступної задачі:" />
+                <Label Margin="7" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center" Text="Задача «Три одиниці»" />
+                <Label Margin="7" FontSize="Medium" Text="Обчисліть кількість послідовностей довжини n, що складаються лише з нулів та одиниць, в яких не зустрічається три одиниці поспіль." />
+                <Label Margin="7" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center" Text="Вхідні дані" />
+                <Label Margin="7" FontSize="Medium" Text="Довжина послідовностей n (1 ≤ n ≤ 10^5)." />
+                <Label Margin="7" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center" Text="Вихідні дані" />
+                <Label Margin="7" FontSize="Medium" Text="Вивести кількість шуканих послідовностей за модулем 12345." />
+                <Label Margin="7" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center" Text="Розв'язок" />
+                <Label Margin="7" FontSize="Medium" Text="Нехай є послідовність довжиною n, тоді є наступні варіанти:" />
+                <Label Margin="7" FontSize="Medium" Text="1)	Перше число – 0, тоді буде стільки ж варіантів, як для послідовності довжиною n – 1." />
+                <Label Margin="7" FontSize="Medium" Text="2)	Перше число – 1, тоді дивимось на друге:" />
+                <Label Margin="17" FontSize="Medium" Text="1.	Друге – 0, стільки ж варіантів, як для послідовності довжиною n – 2." />
+                <Label Margin="17" FontSize="Medium" Text="2.	Друге – 1, третє – 0, залишається стільки ж варіантів, як для послідовності довжиною n – 3." />
+                <Label Margin="7" FontSize="Medium" Text="Тоді напишемо рекурсивну формулу для цієї задачі: " />
+                <Label Margin="7" FontSize="Medium" FontAttributes="Bold" Text="f(n) = f(n-1) + f(n-2) + f(n-3), n > 4, f(1) = 2, f(2) = 4, f(3) = 7" />
+                <Label Margin="7" FontSize="Medium" Text="значення для 1, 2, 3 обраховуються окремо, для цієї задачі їх краще використовувати як тривіальні. Для 1  і 2 не існує послідовності з трьох 111, а для 3 існує тільки одна – 111." />
+                <Line />
+                
+            </StackLayout>
+        </ScrollView>
     </ContentPage>
-    <ContentPage Title="Tasks" >
+    <ContentPage Title="Завдання" >
+        <ScrollView>
+            <StackLayout>
+                <Label Margin="7" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center" Text="Садівник-художник"/>
+                <Label Margin="7" FontSize="Medium" Text="Після посадки дерев садівнику потрібно їх пофарбувати. У його розпорядженні є фарба трьох кольорів: біла, синя і помаранчева. Скількома способами він може пофарбувати N дерев, якщо ніякі два однакові кольори не можуть бути поруч?"/>
+                <Label Margin="7" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center" Text="Вхідні дані"/>
+                <Label Margin="7" FontSize="Medium" Text="Кількість дерев N (1 ≤ N ≤ 50)."/>
+                <Label Margin="7" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center" Text="Вихідні дані"/>
+                <Label Margin="7" FontSize="Medium" Text="Кількість способів фарбування."/>
 
+                <Label Margin="7" FontSize="Medium" Text="Визначте формулу:" FontAttributes="Bold" />
+                <Frame BorderColor="Black" Margin="5">
+                    <StackLayout Orientation="Horizontal">
+                        <Frame BorderColor="Black" CornerRadius="20">
+                            <Label Text="F(n)" FontSize="Medium"/>
+                            <Frame.GestureRecognizers>
+                                <DragGestureRecognizer CanDrag="True" DragStarting="DragGestureRecognizer_DragStarting" />
+                            </Frame.GestureRecognizers>
+                        </Frame>
+                        <Frame BorderColor="Black" CornerRadius="20">
+                            <Label Text="F(n-1)" FontSize="Medium"/>
+                            <Frame.GestureRecognizers>
+                                <DragGestureRecognizer CanDrag="True" DragStarting="DragGestureRecognizer_DragStarting" />
+                            </Frame.GestureRecognizers>
+                        </Frame>
+                        <Frame BorderColor="Black" CornerRadius="20">
+                            <Label Text="F(1)" FontSize="Medium"/>
+                            <Frame.GestureRecognizers>
+                                <DragGestureRecognizer CanDrag="True" DragStarting="DragGestureRecognizer_DragStarting" />
+                            </Frame.GestureRecognizers>
+                        </Frame>
+                        <Frame BorderColor="Black" CornerRadius="20">
+                            <Label Text="2" FontSize="Medium"/>
+                            <Frame.GestureRecognizers>
+                                <DragGestureRecognizer CanDrag="True" DragStarting="DragGestureRecognizer_DragStarting" />
+                            </Frame.GestureRecognizers>
+                        </Frame>
+                        <Frame BorderColor="Black" CornerRadius="20">
+                            <Label Text="3" FontSize="Medium"/>
+                            <Frame.GestureRecognizers>
+                                <DragGestureRecognizer CanDrag="True" DragStarting="DragGestureRecognizer_DragStarting" />
+                            </Frame.GestureRecognizers>
+                        </Frame>
+                    </StackLayout>
+                </Frame>
+                <Frame Margin="5" BorderColor="Black">
+                    <StackLayout >
+                        <StackLayout Orientation="Horizontal">
+                            <Frame BorderColor="Black" x:Name="dndframe1">
+                                <Label Margin="7" FontSize="Medium" Text="     "/>
+                                <Frame.GestureRecognizers>
+                                    <DropGestureRecognizer AllowDrop="True" Drop="DropGestureRecognizer_Drop"/>
+                                </Frame.GestureRecognizers>
+                            </Frame>
+                            <Label Margin="7" FontSize="Medium" VerticalTextAlignment="Center" Text="=" />
+                            <Frame BorderColor="Black" x:Name="dndframe2">
+                                <Label Margin="7" FontSize="Medium" Text="     "/>
+                                <Frame.GestureRecognizers>
+                                    <DropGestureRecognizer AllowDrop="True" Drop="DropGestureRecognizer_Drop"/>
+                                </Frame.GestureRecognizers>
+                            </Frame>
+                            <Label Margin="7" FontSize="Medium" VerticalTextAlignment="Center" Text="*" />
+                            <Frame BorderColor="Black" x:Name="dndframe3">
+                                <Label Margin="7" FontSize="Medium" Text="     "/>
+                                <Frame.GestureRecognizers>
+                                    <DropGestureRecognizer AllowDrop="True" Drop="DropGestureRecognizer_Drop"/>
+                                </Frame.GestureRecognizers>
+                            </Frame>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal">
+                            <Frame BorderColor="Black" x:Name="dndframe4">
+                                <Label Margin="7" FontSize="Medium" Text="     "/>
+                                <Frame.GestureRecognizers>
+                                    <DropGestureRecognizer AllowDrop="True" Drop="DropGestureRecognizer_Drop"/>
+                                </Frame.GestureRecognizers>
+                            </Frame>
+                            <Label Margin="7" FontSize="Medium" VerticalTextAlignment="Center" Text="=" />
+                            <Frame BorderColor="Black" x:Name="dndframe5">
+                                <Label Margin="7" FontSize="Medium" Text="     "/>
+                                <Frame.GestureRecognizers>
+                                    <DropGestureRecognizer AllowDrop="True" Drop="DropGestureRecognizer_Drop"/>
+                                </Frame.GestureRecognizers>
+                            </Frame>
+                        </StackLayout>
+                        <Label Margin="7" FontSize="Medium" x:Name="T1Label" />
+                        <Button Text="Перевірити" Clicked="Button_Clicked" />
+                    </StackLayout>
+                </Frame>
+
+                <Label Margin="7" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center" Text="Космічні загарбники"/>
+                <Label Margin="7" FontSize="Medium" Text="Петрик написав свій варіант відомої гри ''Космічні загарбники''. Гра полягає у наступному. На землю нападають кораблі космічних загарбників. Вони вишукуванні рядами у верхній частині екрану. Гравець керує лазерною пушкою, яка знаходиться у нижнього краю екрану у одному зі стовбців. За одну дію гравець може перемістити пушку ліворуч або праворуч, або здійснити постріл вертикально вгору. Якщо гравець робить постріл, то він знищує найближчий корабель прибульців у тому стовбці, у якому знаходиться пушка."/>
+                <Label Margin="7" FontSize="Medium" Text="На відміну від оригінальної гри, у Петриковому варіанті кораблі прибульців стоять на місці і не можуть стріляти, тому гравець не може програти. Допоможіть Петрику знищити усі кораблі прибульців за мінімальну кількість дій."/>
+                <Label Margin="7" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center" Text="Вхідні дані"/>
+                <Label Margin="7" FontSize="Medium" Text="Перший рядок вхідного файлу містить числа n та p - кількість стовбців та номер стовбця, у якому спочатку знаходиться пушка (1 ≤ n ≤ 100, 1 ≤ p ≤ n). Другий рядок містить n чисел a1, a2, ..., an, де ai - кількість пришельців у i-му стовбці (1 ≤ ai ≤ 100)."/>
+                <Label Margin="7" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center" Text="Вихідні дані"/>
+                <Label Margin="7" FontSize="Medium" Text="У вихідний файл виведіть одне число - мінімальну кількість дій, необхідних для того, щоб знищити усіх прибульців."/>
+
+                <Label Margin="7" FontSize="Medium" Text="Заповніть масив:" FontAttributes="Bold"/>
+                <Label Margin="7" FontSize="Medium" Text="А - вхідні дані, В - вихідні дані" />
+                <Label Margin="7" FontSize="Medium" Text="n = 5, p = 4" />
+                <Grid Margin="5">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1" />
+                        <RowDefinition />
+                        <RowDefinition Height="1" />
+                        <RowDefinition />
+                        <RowDefinition Height="1" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1"/>
+                        <ColumnDefinition />
+                        <ColumnDefinition Width="1"/>
+                        <ColumnDefinition />
+                        <ColumnDefinition Width="1"/>
+                        <ColumnDefinition />
+                        <ColumnDefinition Width="1"/>
+                        <ColumnDefinition />
+                        <ColumnDefinition Width="1"/>
+                        <ColumnDefinition />
+                        <ColumnDefinition Width="1"/>
+                        <ColumnDefinition />
+                        <ColumnDefinition Width="1"/>
+                    </Grid.ColumnDefinitions>
+                    <BoxView BackgroundColor="Black" Grid.Row="0" Grid.ColumnSpan="13"/>
+                    <BoxView BackgroundColor="Black" Grid.Row="2" Grid.ColumnSpan="13"/>
+                    <BoxView BackgroundColor="Black" Grid.Row="4" Grid.ColumnSpan="13"/>
+                    <BoxView BackgroundColor="Black" Grid.Column="0" Grid.RowSpan="5"/>
+                    <BoxView BackgroundColor="Black" Grid.Column="2" Grid.RowSpan="5"/>
+                    <BoxView BackgroundColor="Black" Grid.Column="4" Grid.RowSpan="5"/>
+                    <BoxView BackgroundColor="Black" Grid.Column="6" Grid.RowSpan="5"/>
+                    <BoxView BackgroundColor="Black" Grid.Column="8" Grid.RowSpan="5"/>
+                    <BoxView BackgroundColor="Black" Grid.Column="10" Grid.RowSpan="5"/>
+                    <BoxView BackgroundColor="Black" Grid.Column="12" Grid.RowSpan="5"/>
+
+                    <Label Text="A" HorizontalOptions="Center" FontSize="Medium" Grid.Column="1" Grid.Row="1"/>
+                    <Label Text="5" HorizontalOptions="Center" FontSize="Medium" Grid.Column="3" Grid.Row="1"/>
+                    <Label Text="3" HorizontalOptions="Center" FontSize="Medium" Grid.Column="5" Grid.Row="1"/>
+                    <Label Text="4" HorizontalOptions="Center" FontSize="Medium" Grid.Column="7" Grid.Row="1"/>
+                    <Label Text="1" HorizontalOptions="Center" FontSize="Medium" Grid.Column="9" Grid.Row="1"/>
+                    <Label Text="2" HorizontalOptions="Center" FontSize="Medium" Grid.Column="11" Grid.Row="1"/>
+
+                    <Label Text="B" HorizontalOptions="Center" FontSize="Medium" Grid.Column="1" Grid.Row="3"/>
+                    <Editor FontSize="Medium" Grid.Column="3" Grid.Row="3" Keyboard="Numeric" x:Name="T2L1Edit1"/>
+                    <Editor FontSize="Medium" Grid.Column="5" Grid.Row="3" Keyboard="Numeric" x:Name="T2L1Edit2"/>
+                    <Editor FontSize="Medium" Grid.Column="7" Grid.Row="3" Keyboard="Numeric" x:Name="T2L1Edit3"/>
+                    <Editor FontSize="Medium" Grid.Column="9" Grid.Row="3" Keyboard="Numeric" x:Name="T2L1Edit4"/>
+                    <Editor FontSize="Medium" Grid.Column="11" Grid.Row="3" Keyboard="Numeric" x:Name="T2L1Edit5"/>
+                </Grid>
+                <Label Margin="7" FontSize="Medium" x:Name="T2Label" />
+                <Button Clicked="Button_Clicked_1" Text="Перевірити"/>
+
+                <Label Margin="7" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center" Text="Дві цифри"/>
+                <Label Margin="7" FontSize="Medium" Text="Скільки n-значних чисел можна утворити з двох цифр 5 та 9, в яких три однакові цифри не стоять поруч?"/>
+                <Label Margin="7" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center" Text="Вхідні дані"/>
+                <Label Margin="7" FontSize="Medium" Text="Одне число n (n ≤ 30)."/>
+                <Label Margin="7" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center" Text="Вихідні дані"/>
+                <Label Margin="7" FontSize="Medium" Text="Кількість n-значних чисел."/>
+
+                <Label Margin="7" FontSize="Medium" Text="Визначте формулу:" FontAttributes="Bold" />
+                <Frame Margin="5">
+                    <StackLayout>
+                        <StackLayout Orientation="Horizontal">
+                            <Label Margin="7" FontSize="Medium" Text="F(n) = F("/>
+                            <Entry FontSize="Medium" x:Name="T3Entry1" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"/>
+                            <Label Margin="7" FontSize="Medium" Text=") + F("/>
+                            <Entry FontSize="Medium" x:Name="T3Entry2" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"/>
+                            <Label Margin="7" FontSize="Medium" Text=")"/>
+                        </StackLayout>
+                        <Label Margin="7" FontSize="Medium" x:Name="T3Label"/>
+                        <Button Text="Перевірити" Clicked="Button_Clicked_2"/>
+                    </StackLayout>
+                </Frame>
+
+
+                <Label Margin="7" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center" Text="Сходинки"/>
+                <Label Margin="7" FontSize="Medium" Text="На кожній з n + 2 сходинок сходів написане ціле число, причому на першій та на останній сходинках записано число 0. На першій сходинці стоїть людина, якій потрібно піднятися на останню сходинку. За один крок вона може підніматись на довільну кількість сходинок, не більшу за k."/>
+                <Label Margin="7" FontSize="Medium" Text="Підрахуємо суму всіх чисел, написаних на сходинках, на які наступила людина. Знайдіть найбільше можливе значення цієї суми."/>
+                <Label Margin="7" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center" Text="Вхідні дані"/>
+                <Label Margin="7" FontSize="Medium" Text="У першому рядку міститься число n (0 ≤ n ≤ 1000). У другому рядку записано n цілих чисел, які не перевищують за модулем 1000, відокремлених пропусками - числа, написані на сходинках (за виключенням першої та останньої сходинки, на яких написані нулі). У третьому рядку записано максимальну величину кроку людини k (1 ≤ k ≤ n)."/>
+                <Label Margin="7" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center" Text="Вихідні дані"/>
+                <Label Margin="7" FontSize="Medium" Text="Вивести максимально можливу суму чисел, написаних на сходинках, на які наступила людина."/>
+                <Grid Margin="5">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1" />
+                        <RowDefinition />
+                        <RowDefinition Height="1" />
+                        <RowDefinition />
+                        <RowDefinition Height="1" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1"/>
+                        <ColumnDefinition />
+                        <ColumnDefinition Width="1"/>
+                        <ColumnDefinition />
+                        <ColumnDefinition Width="1"/>
+                        <ColumnDefinition />
+                        <ColumnDefinition Width="1"/>
+                        <ColumnDefinition />
+                        <ColumnDefinition Width="1"/>
+                        <ColumnDefinition />
+                        <ColumnDefinition Width="1"/>
+                        <ColumnDefinition />
+                        <ColumnDefinition Width="1"/>
+                        <ColumnDefinition />
+                        <ColumnDefinition Width="1"/>
+                    </Grid.ColumnDefinitions>
+                    <BoxView BackgroundColor="Black" Grid.Row="0" Grid.ColumnSpan="15"/>
+                    <BoxView BackgroundColor="Black" Grid.Row="2" Grid.ColumnSpan="15"/>
+                    <BoxView BackgroundColor="Black" Grid.Row="4" Grid.ColumnSpan="15"/>
+                    <BoxView BackgroundColor="Black" Grid.Column="0" Grid.RowSpan="5"/>
+                    <BoxView BackgroundColor="Black" Grid.Column="2" Grid.RowSpan="5"/>
+                    <BoxView BackgroundColor="Black" Grid.Column="4" Grid.RowSpan="5"/>
+                    <BoxView BackgroundColor="Black" Grid.Column="6" Grid.RowSpan="5"/>
+                    <BoxView BackgroundColor="Black" Grid.Column="8" Grid.RowSpan="5"/>
+                    <BoxView BackgroundColor="Black" Grid.Column="10" Grid.RowSpan="5"/>
+                    <BoxView BackgroundColor="Black" Grid.Column="12" Grid.RowSpan="5"/>
+                    <BoxView BackgroundColor="Black" Grid.Column="14" Grid.RowSpan="5"/>
+
+                    <Label Text="A" HorizontalOptions="Center" FontSize="Medium" Grid.Column="1" Grid.Row="1"/>
+                    <Label Text="5" HorizontalOptions="Center" FontSize="Medium" Grid.Column="3" Grid.Row="1"/>
+                    <Label Text="3" HorizontalOptions="Center" FontSize="Medium" Grid.Column="5" Grid.Row="1"/>
+                    <Label Text="4" HorizontalOptions="Center" FontSize="Medium" Grid.Column="7" Grid.Row="1"/>
+                    <Label Text="1" HorizontalOptions="Center" FontSize="Medium" Grid.Column="9" Grid.Row="1"/>
+                    <Label Text="2" HorizontalOptions="Center" FontSize="Medium" Grid.Column="11" Grid.Row="1"/>
+                    <Label Text="2" HorizontalOptions="Center" FontSize="Medium" Grid.Column="13" Grid.Row="1"/>
+
+                    <Label Text="B" HorizontalOptions="Center" FontSize="Medium" Grid.Column="1" Grid.Row="3"/>
+                    <Editor FontSize="Medium" Grid.Column="3" Grid.Row="3" Keyboard="Numeric" x:Name="T4Edit1"/>
+                    <Editor FontSize="Medium" Grid.Column="5" Grid.Row="3" Keyboard="Numeric" x:Name="T4Edit2"/>
+                    <Editor FontSize="Medium" Grid.Column="7" Grid.Row="3" Keyboard="Numeric" x:Name="T4Edit3"/>
+                    <Editor FontSize="Medium" Grid.Column="9" Grid.Row="3" Keyboard="Numeric" x:Name="T4Edit4"/>
+                    <Editor FontSize="Medium" Grid.Column="11" Grid.Row="3" Keyboard="Numeric" x:Name="T4Edit5"/>
+                    <Editor FontSize="Medium" Grid.Column="13" Grid.Row="3" Keyboard="Numeric" x:Name="T4Edit6"/>
+
+                </Grid>
+                <Label Margin="7" FontSize="Medium" x:Name="T4Label" />
+                <Button Clicked="Button_Clicked_3" Text="Перевірити"/>
+
+                <Label Margin="7" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center" Text="Гра"/>
+                <Label Margin="7" FontSize="Medium" Text="Ви можете згадати хоча б одного свого знайомого до двадцятирічного віку, який у дитинстві не грав у комп`ютерні ігри? Якщо так, то можливо ви і самі не знайомі з цією розвагою? Втім, труднощів при розв`язуванні цієї задачі це створити не повинно."/>
+                <Label Margin="7" FontSize="Medium" Text="У багатьох старих іграх з двомірною графікою можна зіткнутись з подібною ситуацією. Якийсь Герой стрибає по платформам (або островкам), які висять у повітрі. Він повинен перебратись від одного краю екрану до іншого. При цьому при стрибку з однієї платформи на сусідню, у Героя витрачається |y2-y1| одиниць Енергії, де y1 і y2 – висоти, на яких розміщено ці платформи. Крім того, у Героя є Суперприйом, який дозволяє перестрибнути через платформу, але на це витрачається 3*|y3-y1| одиниць Енергії. Звичайно ж, Енергію слід витрачати максимально економно."/>
+                <Label Margin="7" FontSize="Medium" Text="Припустимо, що вам відомі координати всіх платформ у порядку від лівого краю до правого. Чи зможете ви знайти, яка мінімальна кількість Енергії знадобиться Герою, щоб дістатись з першої платформи до останньої?"/>
+                <Label Margin="7" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center" Text="Вхідні дані"/>
+                <Label Margin="7" FontSize="Medium" Text="У першому рядку вхідного файлу задано кількість платформ n (1 ≤ n ≤ 30000). Другий рядок містить n натуральних чисел, які не перевищують 30000 – висоти, на яких розміщено платформи."/>
+                <Label Margin="7" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center" Text="Вихідні дані"/>
+                <Label Margin="7" FontSize="Medium" Text="У вихідний файл запишіть єдине число – мінімальну кількість Енергії, яку повинен витратити гравець на подолання платформ (звичайно ж у припущенні, що cheat-коди використовувати не можна)."/>
+
+
+                <Label Margin="7" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center" Text="Пограбування будинків"/>
+                <Label Margin="7" FontSize="Medium" Text="Ви - професіонал своєї справи і плануєте пограбувати ряд будинків уздовж вулиці. У кожному будинку захована певна сума грошей. Єдине, що заважає Вам грабувати - так це те, що сусідні будинки пов'язані системою безпеки: буде переданий сигнал в поліцію, якщо два сусідні будинки будуть пограбовані в один і той же вечір."/>
+                <Label Margin="7" FontSize="Medium" Text="Знаючи кількість грошей в кожному будинку, визначте максимальну суму, яку Ви зможете пограбувати сьогодні ввечері без попередження поліції."/>
+                <Label Margin="7" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center" Text="Вхідні дані"/>
+                <Label Margin="7" FontSize="Medium" Text="Перший рядок містить кількість будинків n(1 ≤ n ≤ 10^6). Другий рядок містить n цілих невід'ємних чисел a1,a2, ...,an, де ai- кількість грошей, яке може бути винесено з i - го будинку."/>
+                <Label Margin="7" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center" Text="Вихідні дані"/>
+                <Label Margin="7" FontSize="Medium" Text="Виведіть максимальну суму, яку Ви зможете пограбувати сьогодні ввечері без надходження сигналу в поліцію."/>
+                
+                <Line />
+              
+                
+            </StackLayout>
+        </ScrollView>
     </ContentPage>
 </TabbedPage>
