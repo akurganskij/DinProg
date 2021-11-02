@@ -75,7 +75,7 @@ namespace DinProg
             {
                 DisplayAlert("Uncorrect input", "Input Number", "OK");
             }
-            int[] correctnum = new [] { 19, 13, 9, 1, 3 };
+            int[] correctnum = new [] { 6, 4, 6, 1, 3 };
             bool a = true; 
             for (int i = 0; i < 5; ++i) a = a && nums[i] == correctnum[i];
             if (a)
@@ -160,13 +160,13 @@ namespace DinProg
         {
             Button[] btns = new Button[] {T6button1, T6button2, T6button3, T6button4, T6button5, T6button6, T6button7,
             T6button8, T6button9, T6button10};
-            bool[] correctansw = new bool[] { };
+            bool[] correctansw = new bool[] {true, false, false, true, false, true, false, true, false, true };
             bool[] answ = new bool[10];
             for (int i = 0; i < 10; ++i) 
                 if (btns[i].BackgroundColor == Color.Yellow) answ[i] = true; 
                 else answ[i] = false;
             bool a = true;
-            for (int i = 0; i < 9; ++i) a = a && correctansw[i] == answ[i];
+            for (int i = 0; i < 10; ++i) a = a && correctansw[i] == answ[i];
             if (a)
             {
                 correct(T6Label);

@@ -82,8 +82,8 @@
         <ShellContent>
             <ContentPage>
                 <StackLayout VerticalOptions="Center">
-                    <Label Text="Хочеш вивчити динамічне програмування?" FontSize="{x:OnPlatform UWP=60, Android=50}" HorizontalTextAlignment="Center" FontAttributes="Bold"/>
-                    <Label Text="Тоді сміливо натискай кнопку внизу" FontSize="{x:OnPlatform UWP=50, Android=40}" HorizontalTextAlignment="Center"/>
+                    <Label Text="Динамічне програмування - це цікаво!" FontSize="{x:OnPlatform UWP=60, Android=50}" HorizontalTextAlignment="Center" FontAttributes="Bold"/>
+                    <Line  Margin="10"/>
                     <Line  Margin="10"/>
                     <Button Clicked="Button_Clicked" Text="Розпочати" FontSize="Large"/>
                 </StackLayout>
