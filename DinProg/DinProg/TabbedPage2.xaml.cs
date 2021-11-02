@@ -108,7 +108,79 @@ namespace DinProg
 
         private void Button_Clicked_3(object sender, EventArgs e)
         {
+            int[] correctnums = new int[] { 1, 0, 3, 1, 2, 5 };
+            Editor[] edits = new Editor[6] { T4Edit1, T4Edit2, T4Edit3, T4Edit4, T4Edit5, T4Edit6 };
+            int[] answ = new int[6];
+            try
+            {
+                for (int i = 0; i < 6; ++i) answ[i] = Convert.ToInt32(edits[i].Text);
+            }
+            catch(Exception ex)
+            {
+                DisplayAlert("Некоректний ввод", "Введіть число", "ОК");
+            }
+            bool a = true;
+            for (int i = 0; i < 6; ++i) a = a && correctnums[i] == answ[i];
+            if (a)
+            {
+                correct(T4Label);
+            }
+            else
+            {
+                uncorrect(T4Label);
+            }
+        }
 
+        private void Button_Clicked_4(object sender, EventArgs e)
+        {
+            int[] correctnums = new int[] {0, 4, 9, 13, 12, 16, 18, 32, 24};
+            Editor[] edits = new Editor[] { T5Edit1, T5Edit2, T5Edit3, T5Edit4, T5Edit5, T5Edit6, T5Edit7, T5Edit8, T5Edit9 };
+            int[] answ = new int[9];
+            try
+            {
+                for (int i = 0; i < 9; ++i) answ[i] = Convert.ToInt32(edits[i].Text);
+            }
+            catch (Exception ex)
+            {
+                DisplayAlert("Некоректний ввод", "Введіть число", "ОК");
+            }
+            bool a = true;
+            for (int i = 0; i < 9; ++i) a = a && correctnums[i] == answ[i];
+            if (a)
+            {
+                correct(T5Label);
+            }
+            else
+            {
+                uncorrect(T5Label);
+            }
+        }
+
+        private void Button_Clicked_5(object sender, EventArgs e)
+        {
+            Button[] btns = new Button[] {T6button1, T6button2, T6button3, T6button4, T6button5, T6button6, T6button7,
+            T6button8, T6button9, T6button10};
+            bool[] correctansw = new bool[] { };
+            bool[] answ = new bool[10];
+            for (int i = 0; i < 10; ++i) 
+                if (btns[i].BackgroundColor == Color.Yellow) answ[i] = true; 
+                else answ[i] = false;
+            bool a = true;
+            for (int i = 0; i < 9; ++i) a = a && correctansw[i] == answ[i];
+            if (a)
+            {
+                correct(T6Label);
+            }
+            else
+            {
+                uncorrect(T6Label);
+            }
+        }
+
+        private void T6button_Clicked(object sender, EventArgs e)
+        {
+            if ((sender as Button).BackgroundColor == Color.LightGray) (sender as Button).BackgroundColor = Color.Yellow;
+            else (sender as Button).BackgroundColor = Color.LightGray;
         }
     }
 }
