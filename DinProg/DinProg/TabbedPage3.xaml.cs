@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using System.Timers;
 
 namespace DinProg
 {
@@ -16,9 +17,11 @@ namespace DinProg
         private bool[,] T1matrix = new bool[5, 5];
         private int[,] T1nums = new int[5, 5];
         private Frame[,] frames = new Frame[m1, n1];
-        Frame prevfrm = new Frame(), imfrm,tempframe = new Frame();
+        private Frame prevfrm = new Frame(), imfrm,tempframe = new Frame();
         private Tuple<int, int> T1lastcoords;
         private int T1res =0;
+        private bool T1Attemptres = false;
+        private static System.Timers.Timer aTimer;
         public TabbedPage3()
         {
             InitializeComponent();
@@ -66,15 +69,68 @@ namespace DinProg
             }
             T1matrix[0, n - 1] = true;
         }
-
+        private int T1result()
+        {
+            int[,] temp = new int[m1, n1];
+            int a;
+            for(int i = 0; i < m1; ++i)
+            {
+                for(int j = n1 - 1; j >= 0; --j)
+                {
+                    if (i == 0 && j == n1 - 1) temp[i, j] = T1nums[i, j];
+                    else if (i == 0) temp[i, j] = temp[i, j + 1] + T1nums[i, j];
+                    else if (j == n1-1) temp[i, j] = temp[i - 1, j] + T1nums[i, j];
+                    else temp[i, j] = Math.Max(temp[i - 1, j], temp[i, j + 1]) + T1nums[i, j];
+                }
+            }
+            a = temp[m1-1, 0];
+            return a;
+        }
+        private void correct(Label label)
+        {
+            label.Text = "Завдання виконано правильно!";
+            label.TextColor = Color.Green;
+        }
+        private void uncorrect(Label label)
+        {
+            label.Text = "Спробуйте ще раз";
+            label.TextColor = Color.Red;
+        }
         private void Button_Clicked(object sender, EventArgs e)
         {
-
+            int res = T1result();
+            if (Convert.ToInt32(T1LabelforSum.Text) == res)
+            {
+                correct(T1Result);
+                T1Attemptres = true;
+            }
+            else uncorrect(T1Result);
+            prevfrm.Content = tempframe.Content;
+            for (int i = 0; i < 5; ++i)
+                for (int j = 0; j < 5; ++j)
+                    T1matrix[i, j] = false;
+            T1matrix[0, n1 - 1] = true;
+            T1res = 0;
+            T1LabelforSum.Text = "";
+            T1LabelforOutput.Text = "";
         }
 
         private void Button_Clicked_1(object sender, EventArgs e)
         {
-
+            if (T1Attemptres == false) Button_Clicked(sender, e);
+            if(T1Attemptres == true)
+            {
+                T1Attemptres = false;
+                Random rnd = new Random();
+                n1 = rnd.Next(2, 5);
+                m1 = rnd.Next(2, 5);
+                T1res = 0;
+                T1LabelforSum.Text = "";
+                T1LabelforOutput.Text = "";
+                Task1Grid.Children.Clear();
+                grid_generator(m1, n1);
+                T1Result.Text = "";
+            }
         }
 
         private void DragGestureRecognizer_DragStarting(object sender, DragStartingEventArgs e)
@@ -120,6 +176,10 @@ namespace DinProg
                 for (int i = 0; i < 5; ++i)
                     for (int j = 0; j < 5; ++j)
                         T1matrix[i, j] = false;
+                if (a.Item1 == 0 && a.Item2==n1-1)
+                {
+                    T1Result.Text = "";
+                }
                 if (T1lastcoords.Item1 == a.Item1) T1LabelforOutput.Text += "F";
                 if (T1lastcoords.Item2 == a.Item2) T1LabelforOutput.Text += "R";
                 if (a.Item2 > 0) T1matrix[a.Item1, a.Item2 - 1] = true;

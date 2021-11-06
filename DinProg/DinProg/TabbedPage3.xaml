@@ -49,10 +49,10 @@
                 <Grid x:Name="Task1Grid" Margin="5" />
                 <StackLayout Orientation="Horizontal">
                     <Label Margin="7" FontSize="Medium" Text="" x:Name="T1LabelforOutput" />
-                    <Label Margin="7" FontSize="Medium" Text="" x:Name="T1LabelforSum" />
+                    <Label Margin="7" FontSize="Medium" Text="" x:Name="T1LabelforSum" HorizontalOptions="End"/>
                 </StackLayout>
                 
-                <Label Margin="7" FontSize="Medium" Text="" />
+                <Label Margin="7" FontSize="Medium" Text="" x:Name="T1Result"/>
                 <StackLayout Orientation="Horizontal">
                     <Button Text="Перевірити" HorizontalOptions="FillAndExpand" Clicked="Button_Clicked"/>
                     <Button Text="Наступний раунд" HorizontalOptions="FillAndExpand" Clicked="Button_Clicked_1"/>
