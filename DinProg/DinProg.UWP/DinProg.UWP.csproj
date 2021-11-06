@@ -105,6 +105,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="index.png" />
+    <Content Include="mouseL3T1.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LargeTile.scale-100.png" />
     <Content Include="Assets\LargeTile.scale-200.png" />

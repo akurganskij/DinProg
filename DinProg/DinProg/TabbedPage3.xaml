@@ -10,32 +10,72 @@
                 <Label Margin="7" FontSize="Large" FontAttributes="Bold" HorizontalTextAlignment="Center" Text="Пошук екстремального шляху." />
                 <Label Margin="7" FontSize="Medium" Text="Слово «екстремальний» у назві цього рівня може трохи перелякати або збити з пантелику, але воно не означає страшний, екстремальний шлях – це шлях, який має найменшу(найбільшу) довжину, або шлях, дотримуючись якого можна найбільше(найменше) отримати(втратити)." />
                 <Label Margin="7" FontSize="Medium" Text="У таких задачах треба працювати з таблицею чисел – двовимірним масивом. Знаходити суму, часткові суми, добуток… Розберемо задачу на знаходження шляху у двовимірному масиві:" />
-                <Label Margin="7" FontSize="Medium" Text="Задача «Черепашка»" />
+                <Label Margin="7" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center" Text="Задача «Черепашка»" />
                 <Label Margin="7" FontSize="Medium" Text="У лівому верхньому куті прямокутної таблиці розміром n × m знаходиться черепашка. На кожній клітинці таблиці розлито деяку кількість кислоти. Черепашка може переміщуватись праворуч або вниз, при цьому маршрут черепашки завершується у правому нижньому куті таблиці." />
                 <Label Margin="7" FontSize="Medium" Text="Кожен мілілітр кислоти причиняє черепашці деяку кількість шкоди. Знайдіть найменше можливе значення шкоди, яку отримає черепашка після прогулянки по таблиці." />
-                <Label Margin="7" FontSize="Medium" Text="Вхідні дані" />
+                <Label Margin="7" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center" Text="Вхідні дані" />
                 <Label Margin="7" FontSize="Medium" Text="У першому рядку вхідних даних записано два натуральних числа n та m, які не перевищують 1000 - розміри таблиці. Далі йде n рядків, кожен з яких містить m чисел, відокремлених пропусками - опис таблиці з вказуванням для кожної клітинки вмісту кислоти на ній (у мілілітрах)." />
-                <Label Margin="7" FontSize="Medium" Text="Вихідні дані" />
+                <Label Margin="7" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center" Text="Вихідні дані" />
                 <Label Margin="7" FontSize="Medium" Text="Вивести мінімальну можливу вартість маршруту черепашки." />
-                <Label Margin="7" FontSize="Medium" Text="Розв'язок" />
+                <Label Margin="7" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center" Text="Розв'язок" />
                 <Label Margin="7" FontSize="Medium" Text="Для кожної клітинки треба обрахувати сумарну кількість кислоти. Почнемо з клітинки (0; 0) для неї кількість залишається сталою. Для усіх інших клітинок знаходимо мінімум з верхньої та лівої клітинок, після чого додаємо значення з цієї клітинки, а результат записуємо у цю клітинку. Таким чином змінимо масив. Тоді значення у клітинці (n - 1; m - 1) буде відповіддю на задачу." />
                 <Label Margin="7" FontSize="Medium" Text="У деяких задачах просять продемонструвати шлях. Для цього використовують зворотній хід. Розглянемо на прикладі:" />
-                <Label Margin="7" FontSize="Medium" Text="Задача «Черепашка: відновлення»" />
+                <Label Margin="7" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center" Text="Задача «Черепашка: відновлення»" />
                 <Label Margin="7" FontSize="Medium" Text="Черепашка хотіла б якомога швидше пройти по прямокутній таблиці з лівого верхнього кута у правий нижній по маршруту з найменшими втратами." />
-                <Label Margin="7" FontSize="Medium" Text="Вхідні дані" />
+                <Label Margin="7" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center" Text="Вхідні дані" />
                 <Label Margin="7" FontSize="Medium" Text="У першому рядку записано два натуральних числа n та m, які не перевищують 1000 - розміри таблиці. Далі йде n рядків, кожен з яких містить m чисел, відокремлених пропусками - опис таблиці з вказуванням для кожної клітинки таблиці вмісту кислоти на ній (у мілілітрах)." />
                 <Label Margin="7" FontSize="Medium" Text="Черепашка може ходити лише вправо та вниз у сусідні клітинки." />
-                <Label Margin="7" FontSize="Medium" Text="Вихідні дані" />
+                <Label Margin="7" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center" Text="Вихідні дані" />
                 <Label Margin="7" FontSize="Medium" Text="У першому рядку виведіть одне ціле число - мінімальну можливу шкоду для черепашки. У наступних рядках виведіть координати клітинок, по яким пролягає відповідний шлях. Координати слід виводити у тому порядку, у якому вони зустрічаються на шляху." />
                 <Label Margin="7" FontSize="Medium" Text="Малюнок до задачі той самий, що і для попередньої." />
-                <Label Margin="7" FontSize="Medium" Text="Розв'язок" />
+                <Label Margin="7" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center" Text="Розв'язок" />
                 <Label Margin="7" FontSize="Medium" Text="Задача розв'язується так само, як і попередня. Але коли масив змінено треба від клітинки (n – 1; m – 1) знаходити мінімум зліва і вгорі до тих пір поки не буде досягнута клітинка (0; 0). Потім вивести усі значення координат але враховуючи те, що у масиві індексація йде від 0, а в задачі від 1. Для виводу можна використати рекурсію з мемоізацією, або просто запам'ятати усі координати в строку чи масив." />
+                
                 <Line />
 
             </StackLayout>
         </ScrollView>
     </ContentPage>
     <ContentPage Title="Завдання" >
+        <ScrollView>
+            <StackLayout>
+                <Label Margin="7" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center" Text="Мишка і зернинки"/>
+                <Label Margin="7" FontSize="Medium" Text="В індійському храмі підлогу прямокутної форми вимощено однаковими квадратними плитками 1 x 1, на кожну з яких насипано від 0 до k зернинок (k ≤ 30000). Розміри підлоги m х n. Мишка вибігає з лівого нижнього кута підлоги храму i рухається до входу у іншу нірку, розміщену у протилежному кутку. Мишка може рухатись лише праворуч або вперед, збираючи всі зернинки з плитки, на якій вона знаходиться. Знайти маршрут, рухаючись по якому мишка збере найбільшу кількість зернин." />
+                <Label Margin="7" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center" Text="Вхідні дані" />
+                <Label Margin="7" FontSize="Medium" Text="Перший рядок містить числа m та n - розміри підлоги (1 ≤ m, n ≤ 100). Далі йде m рядків, починаючи з верхнього, у кожному з яких розміщено n чисел – кількість зернинок на відповідній плитці." />
+                <Label Margin="7" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center" Text="Вихідні дані" />
+                <Label Margin="7" FontSize="Medium" Text="Вивести маршрут руху мишки у форматі: RRFFFRF (F - крок вперед, R - крок праворуч)." />
+                <Label Margin="7" FontSize="Medium" Text="" />
+                <Grid x:Name="Task1Grid" Margin="5" />
+                <StackLayout Orientation="Horizontal">
+                    <Label Margin="7" FontSize="Medium" Text="" x:Name="T1LabelforOutput" />
+                    <Label Margin="7" FontSize="Medium" Text="" x:Name="T1LabelforSum" />
+                </StackLayout>
+                
+                <Label Margin="7" FontSize="Medium" Text="" />
+                <StackLayout Orientation="Horizontal">
+                    <Button Text="Перевірити" HorizontalOptions="FillAndExpand" Clicked="Button_Clicked"/>
+                    <Button Text="Наступний раунд" HorizontalOptions="FillAndExpand" Clicked="Button_Clicked_1"/>
+                </StackLayout>
 
+                <Label Margin="7" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center" Text="Розумна черепашка" />
+                <Label Margin="7" FontSize="Medium" Text="Є клітчате поле розміром m × n. У лівому нижньому куті сидить черепашка. Вона вміє ходити лише праворуч або угору. Перед тим як дістатись до правого верхнього кута її зацікавило питання: скільки існує способів дістатись з початкової точки до правого верхнього кута?" />
+                <Label Margin="7" FontSize="Medium" Text="Черепашка хоча й розумна, але сама рахувати так багато поки що не вміє. Допоможіть черепашці знайти відповідь на своє запитання." />
+                <Label Margin="7" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center" Text="Вхідні дані" />
+                <Label Margin="7" FontSize="Medium" Text="Два натуральних числа, які не перевищують 30." />
+                <Label Margin="7" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center" Text="Вихідні дані" />
+                <Label Margin="7" FontSize="Medium" Text="Виведіть кількість способів дістатися черепашці з лівого нижнього кута до правого верхнього." />
+
+
+                <Label Margin="7" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center" Text="Маршрут" />
+                <Label Margin="7" FontSize="Medium" Text="У таблиці з N рядків і N стовбців клітинки заповнені цифрами від 0 до 9. Потрібно знайти такий шлях з клітинки (1, 1) у клітинку (N, N), щоб сума цифр у клітинках, через які він проходить, був мінімальним; з довільної клітинки ходити можна лише вниз або праворуч." />
+                <Label Margin="7" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center" Text="Вхідні дані" />
+                <Label Margin="7" FontSize="Medium" Text="У першому рядку знаходиться число N (2 ≤ N ≤ 250). У наступних N рядках міститься по N цифр без пропусків." />
+                <Label Margin="7" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center" Text="Вихідні дані" />
+                <Label Margin="7" FontSize="Medium" Text="Виводиться N рядків по N символів. Символ решітка показує, що маршрут проходить через цю клітинку, а точка - що не проходить. Якщо шляхів з мінімальною сумою цифр декілька, вивести довільний." />
+
+                <Line />
+            </StackLayout>
+        </ScrollView>
     </ContentPage>
 </TabbedPage>
