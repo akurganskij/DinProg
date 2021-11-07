@@ -49,7 +49,7 @@
                 <Grid x:Name="Task1Grid" Margin="5" />
                 <StackLayout Orientation="Horizontal">
                     <Label Margin="7" FontSize="Medium" Text="" x:Name="T1LabelforOutput" />
-                    <Label Margin="7" FontSize="Medium" Text="" x:Name="T1LabelforSum" HorizontalOptions="End"/>
+                    <Label Margin="7" FontSize="Medium" Text="" x:Name="T1LabelforSum" HorizontalOptions="EndAndExpand"/>
                 </StackLayout>
                 
                 <Label Margin="7" FontSize="Medium" Text="" x:Name="T1Result"/>
@@ -66,6 +66,10 @@
                 <Label Margin="7" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center" Text="Вихідні дані" />
                 <Label Margin="7" FontSize="Medium" Text="Виведіть кількість способів дістатися черепашці з лівого нижнього кута до правого верхнього." />
 
+                <Grid x:Name="T2Grid">
+                    
+                </Grid>
+                <Button Text="Перевірити" Clicked="Button_Clicked_2"/>
 
                 <Label Margin="7" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center" Text="Маршрут" />
                 <Label Margin="7" FontSize="Medium" Text="У таблиці з N рядків і N стовбців клітинки заповнені цифрами від 0 до 9. Потрібно знайти такий шлях з клітинки (1, 1) у клітинку (N, N), щоб сума цифр у клітинках, через які він проходить, був мінімальним; з довільної клітинки ходити можна лише вниз або праворуч." />

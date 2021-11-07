@@ -13,6 +13,7 @@ namespace DinProg
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class TabbedPage3 : TabbedPage
     {
+        private Entry[,] entries = new Entry[6, 5];
         private static int m1 = 5, n1 = 5;
         private bool[,] T1matrix = new bool[5, 5];
         private int[,] T1nums = new int[5, 5];
@@ -21,15 +22,15 @@ namespace DinProg
         private Tuple<int, int> T1lastcoords;
         private int T1res =0;
         private bool T1Attemptres = false;
-        private static System.Timers.Timer aTimer;
         public TabbedPage3()
         {
             InitializeComponent();
-            grid_generator(5, 5);
+            grid1_generator(5, 5);
             T1lastcoords = new Tuple<int, int>(-1, -1);
+            grid2_generator();
         }
 
-        private void grid_generator(int m, int n)
+        private void grid1_generator(int m, int n)
         {
             DropGestureRecognizer[,] Drop = new DropGestureRecognizer[m, n];
             Image img = new Image()
@@ -69,6 +70,22 @@ namespace DinProg
             }
             T1matrix[0, n - 1] = true;
         }
+        private void grid2_generator()
+        {
+            for(int i = 0; i < 6; ++i)
+            {
+                for(int j = 0; j <5; ++j)
+                {
+                    entries[i, j] = new Entry
+                    {
+                        Keyboard = Keyboard.Numeric,
+                        FontSize = Device.GetNamedSize(NamedSize.Medium, new Entry())
+                    };
+                    T2Grid.Children.Add(entries[i, j], i, j);
+                }
+            }
+        }
+
         private int T1result()
         {
             int[,] temp = new int[m1, n1];
@@ -128,8 +145,48 @@ namespace DinProg
                 T1LabelforSum.Text = "";
                 T1LabelforOutput.Text = "";
                 Task1Grid.Children.Clear();
-                grid_generator(m1, n1);
-                T1Result.Text = "";
+                grid1_generator(m1, n1);
+            }
+        }
+        private void T2matrix(ref int[,] b)
+        {
+            for(int i = 0; i <6; ++i)
+            {
+                for(int j = 4; j >=0; --j)
+                {
+                    if (i == 0 && j == 4) b[i, j] = 0;
+                    else if (i == 0) b[i, j] = 1;
+                    else if (j == 4) b[i, j] = 1;
+                    else b[i, j] = b[i - 1, j] + b[i, j + 1];
+                }
+            }
+        }
+        private void Button_Clicked_2(object sender, EventArgs e)
+        {
+            int[,] answer = new int[6, 5];
+            int[,] nums = new int[6, 5];
+            for (int i = 5; i >= 0; --i)
+            {
+                for (int j = 0; j < 5; ++j)
+                {
+                    try
+                    {
+                        nums[i, j] = Convert.ToInt32(entries[i, j].Text);
+                    }
+                    catch(Exception ex)
+                    {
+                        DisplayAlert("Некоректний ввод", "Введіть число", "OK");
+                    }
+                }
+            }
+            T2matrix(ref answer);
+            for (int i = 5; i >= 0; --i)
+            {
+                for (int j = 0; j < 5; ++j)
+                {
+                    if (nums[i, j] == answer[i, j]) entries[i, j].BackgroundColor = Color.LightGreen;
+                    else entries[i, j].BackgroundColor = Color.LightPink;
+                }
             }
         }
 

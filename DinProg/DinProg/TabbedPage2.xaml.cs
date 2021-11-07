@@ -73,7 +73,7 @@ namespace DinProg
             }
             catch(Exception ex)
             {
-                DisplayAlert("Uncorrect input", "Input Number", "OK");
+                DisplayAlert("Некоректний ввод", "Введіть число", "OK");
             }
             int[] correctnum = new [] { 6, 4, 6, 1, 3 };
             bool a = true; 
