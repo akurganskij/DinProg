@@ -18,18 +18,19 @@ namespace DinProg
         private bool[,] T1matrix = new bool[5, 5];
         private int[,] T1nums = new int[5, 5];
         private Frame[,] frames = new Frame[m1, n1];
-        private Frame prevfrm = new Frame(), imfrm,tempframe = new Frame();
+        private Frame prevfrm = new Frame(), imfrm, tempframe = new Frame();
         private Tuple<int, int> T1lastcoords;
-        private int T1res =0;
-        private bool T1Attemptres = false;
+        private int T1res = 0;
+        private bool T1Attemptres = false, T3correct = false;
+        private int T3x = 2, T3y = 3;
         public TabbedPage3()
         {
             InitializeComponent();
             grid1_generator(5, 5);
             T1lastcoords = new Tuple<int, int>(-1, -1);
             grid2_generator();
-        }
 
+        }
         private void grid1_generator(int m, int n)
         {
             DropGestureRecognizer[,] Drop = new DropGestureRecognizer[m, n];
@@ -45,36 +46,36 @@ namespace DinProg
             };
             Drag.DragStarting += DragGestureRecognizer_DragStarting;
             img.GestureRecognizers.Add(Drag);
-            Task1Grid.Children.Add(img, 0, n-1);
-            
-            for(int i = 0; i < m; ++i)
+            Task1Grid.Children.Add(img, 0, n - 1);
+
+            for (int i = 0; i < m; ++i)
             {
-                for(int j = 0; j < n; ++j)
+                for (int j = 0; j < n; ++j)
                 {
-                    Drop[i,j] = new DropGestureRecognizer
+                    Drop[i, j] = new DropGestureRecognizer
                     {
                         AllowDrop = true
                     };
-                    Drop[i,j].Drop += DropGestureRecognizer_Drop;
+                    Drop[i, j].Drop += DropGestureRecognizer_Drop;
                     T1matrix[i, j] = false;
                     Random rnd = new Random();
                     T1nums[i, j] = rnd.Next(1, 35);
-                    string lbl = T1nums[i,j].ToString();
+                    string lbl = T1nums[i, j].ToString();
                     frames[i, j] = new Frame
-                    {                        
+                    {
                         Content = new Label() { Text = lbl }
                     };
-                    frames[i, j].GestureRecognizers.Add(Drop[i,j]);
-                    Task1Grid.Children.Add(frames[i,j], i + 1, j);
+                    frames[i, j].GestureRecognizers.Add(Drop[i, j]);
+                    Task1Grid.Children.Add(frames[i, j], i + 1, j);
                 }
             }
             T1matrix[0, n - 1] = true;
         }
         private void grid2_generator()
         {
-            for(int i = 0; i < 6; ++i)
+            for (int i = 0; i < 6; ++i)
             {
-                for(int j = 0; j <5; ++j)
+                for (int j = 0; j < 5; ++j)
                 {
                     entries[i, j] = new Entry
                     {
@@ -90,17 +91,17 @@ namespace DinProg
         {
             int[,] temp = new int[m1, n1];
             int a;
-            for(int i = 0; i < m1; ++i)
+            for (int i = 0; i < m1; ++i)
             {
-                for(int j = n1 - 1; j >= 0; --j)
+                for (int j = n1 - 1; j >= 0; --j)
                 {
                     if (i == 0 && j == n1 - 1) temp[i, j] = T1nums[i, j];
                     else if (i == 0) temp[i, j] = temp[i, j + 1] + T1nums[i, j];
-                    else if (j == n1-1) temp[i, j] = temp[i - 1, j] + T1nums[i, j];
+                    else if (j == n1 - 1) temp[i, j] = temp[i - 1, j] + T1nums[i, j];
                     else temp[i, j] = Math.Max(temp[i - 1, j], temp[i, j + 1]) + T1nums[i, j];
                 }
             }
-            a = temp[m1-1, 0];
+            a = temp[m1 - 1, 0];
             return a;
         }
         private void correct(Label label)
@@ -135,7 +136,7 @@ namespace DinProg
         private void Button_Clicked_1(object sender, EventArgs e)
         {
             if (T1Attemptres == false) Button_Clicked(sender, e);
-            if(T1Attemptres == true)
+            if (T1Attemptres == true)
             {
                 T1Attemptres = false;
                 Random rnd = new Random();
@@ -150,9 +151,9 @@ namespace DinProg
         }
         private void T2matrix(ref int[,] b)
         {
-            for(int i = 0; i <6; ++i)
+            for (int i = 0; i < 6; ++i)
             {
-                for(int j = 4; j >=0; --j)
+                for (int j = 4; j >= 0; --j)
                 {
                     if (i == 0 && j == 4) b[i, j] = 0;
                     else if (i == 0) b[i, j] = 1;
@@ -173,7 +174,7 @@ namespace DinProg
                     {
                         nums[i, j] = Convert.ToInt32(entries[i, j].Text);
                     }
-                    catch(Exception ex)
+                    catch (Exception ex)
                     {
                         DisplayAlert("Некоректний ввод", "Введіть число", "OK");
                     }
@@ -187,6 +188,46 @@ namespace DinProg
                     if (nums[i, j] == answer[i, j]) entries[i, j].BackgroundColor = Color.LightGreen;
                     else entries[i, j].BackgroundColor = Color.LightPink;
                 }
+            }
+        }
+
+        private void Button_Clicked_3(object sender, EventArgs e)
+        {
+            T3Result.Text = "";
+            if ((sender as Button).BackgroundColor == Color.LightGray) (sender as Button).BackgroundColor = Color.LightGreen;
+            else if ((sender as Button).BackgroundColor == Color.LightGreen) (sender as Button).BackgroundColor = Color.LightPink;
+            else if ((sender as Button).BackgroundColor == Color.LightPink) (sender as Button).BackgroundColor = Color.LightGreen;
+        }
+
+        private void Button_Clicked_4(object sender, EventArgs e)
+        {
+            bool[,] res = new bool[3, 3] { { true, false, false }, { true, true, true }, { false, false, true } };
+            if ((res[T3x - 1, T3y - 1] && T3ColorBtn.BackgroundColor == Color.LightGreen) || (!res[T3x - 1, T3y - 1] && T3ColorBtn.BackgroundColor == Color.LightPink))
+            {
+                correct(T3Result);
+                T3correct = true;
+            }
+            else
+            {
+                uncorrect(T3Result);
+                T3correct = false;
+            }
+        }
+
+        private void Button_Clicked_5(object sender, EventArgs e)
+        {
+            if (T3correct)
+            {
+                T3correct = false;
+                Random rnd = new Random();
+                T3x = rnd.Next(1, 4);
+                T3y = rnd.Next(1, 4);
+                T3ColorBtn.Text = "(" + T3x + "; " + T3y + ")";
+            }
+            else
+            {
+                Button_Clicked_4(sender, e);
+                if(T3correct) Button_Clicked_5(sender, e);
             }
         }
 

@@ -78,6 +78,52 @@
                 <Label Margin="7" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center" Text="Вихідні дані" />
                 <Label Margin="7" FontSize="Medium" Text="Виводиться N рядків по N символів. Символ решітка показує, що маршрут проходить через цю клітинку, а точка - що не проходить. Якщо шляхів з мінімальною сумою цифр декілька, вивести довільний." />
 
+                <Grid Margin="5">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1"/>
+                        <RowDefinition />
+                        <RowDefinition Height="1"/>
+                        <RowDefinition />
+                        <RowDefinition Height="1"/>
+                        <RowDefinition />
+                        <RowDefinition Height="1"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1"/>
+                        <ColumnDefinition />
+                        <ColumnDefinition Width="1"/>
+                        <ColumnDefinition />
+                        <ColumnDefinition Width="1"/>
+                        <ColumnDefinition />
+                        <ColumnDefinition Width="1"/>
+                    </Grid.ColumnDefinitions>
+                    <BoxView WidthRequest="1" BackgroundColor="Black" Grid.Row="0" Grid.ColumnSpan="7"/>
+                    <BoxView WidthRequest="1" BackgroundColor="Black" Grid.Row="2" Grid.ColumnSpan="7"/>
+                    <BoxView WidthRequest="1" BackgroundColor="Black" Grid.Row="4" Grid.ColumnSpan="7"/>
+                    <BoxView WidthRequest="1" BackgroundColor="Black" Grid.Row="6" Grid.ColumnSpan="7"/>
+
+                    <BoxView WidthRequest="1" BackgroundColor="Black" Grid.Column="0" Grid.RowSpan="7"/>
+                    <BoxView WidthRequest="1" BackgroundColor="Black" Grid.Column="2" Grid.RowSpan="7"/>
+                    <BoxView WidthRequest="1" BackgroundColor="Black" Grid.Column="4" Grid.RowSpan="7"/>
+                    <BoxView WidthRequest="1" BackgroundColor="Black" Grid.Column="6" Grid.RowSpan="7"/>
+
+                    <Label Text="9" FontSize="Medium" Grid.Row="1" Grid.Column="1" HorizontalOptions="Center"/>
+                    <Label Text="2" FontSize="Medium" Grid.Row="3" Grid.Column="1" HorizontalOptions="Center"/>
+                    <Label Text="0" FontSize="Medium" Grid.Row="5" Grid.Column="1" HorizontalOptions="Center"/>
+                    <Label Text="4" FontSize="Medium" Grid.Row="1" Grid.Column="3" HorizontalOptions="Center"/>
+                    <Label Text="1" FontSize="Medium" Grid.Row="3" Grid.Column="3" HorizontalOptions="Center"/>
+                    <Label Text="9" FontSize="Medium" Grid.Row="5" Grid.Column="3" HorizontalOptions="Center"/>
+                    <Label Text="3" FontSize="Medium" Grid.Row="1" Grid.Column="5" HorizontalOptions="Center"/>
+                    <Label Text="6" FontSize="Medium" Grid.Row="3" Grid.Column="5" HorizontalOptions="Center"/>
+                    <Label Text="1" FontSize="Medium" Grid.Row="5" Grid.Column="5" HorizontalOptions="Center"/>
+                </Grid>
+                <Button Clicked="Button_Clicked_3" Text="(2; 3)" HorizontalOptions="Center" BackgroundColor="LightGray" TextColor="DarkBlue" x:Name="T3ColorBtn"/>
+                <Label Margin="7" FontSize="Medium" Text="" x:Name="T3Result"/>
+                <StackLayout Orientation="Horizontal">
+                    <Button Text="Перевірити" Clicked="Button_Clicked_4" HorizontalOptions="FillAndExpand" />
+                    <Button Text="Далі" Clicked="Button_Clicked_5" HorizontalOptions="FillAndExpand" />
+                </StackLayout>
+
                 <Line />
             </StackLayout>
         </ScrollView>
