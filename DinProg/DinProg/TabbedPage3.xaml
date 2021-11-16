@@ -13,6 +13,7 @@
                 <Label Margin="7" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center" Text="Задача «Черепашка»" />
                 <Label Margin="7" FontSize="Medium" Text="У лівому верхньому куті прямокутної таблиці розміром n × m знаходиться черепашка. На кожній клітинці таблиці розлито деяку кількість кислоти. Черепашка може переміщуватись праворуч або вниз, при цьому маршрут черепашки завершується у правому нижньому куті таблиці." />
                 <Label Margin="7" FontSize="Medium" Text="Кожен мілілітр кислоти причиняє черепашці деяку кількість шкоди. Знайдіть найменше можливе значення шкоди, яку отримає черепашка після прогулянки по таблиці." />
+                <Image Source="L3I1.gif"/>
                 <Label Margin="7" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center" Text="Вхідні дані" />
                 <Label Margin="7" FontSize="Medium" Text="У першому рядку вхідних даних записано два натуральних числа n та m, які не перевищують 1000 - розміри таблиці. Далі йде n рядків, кожен з яких містить m чисел, відокремлених пропусками - опис таблиці з вказуванням для кожної клітинки вмісту кислоти на ній (у мілілітрах)." />
                 <Label Margin="7" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center" Text="Вихідні дані" />
@@ -41,6 +42,7 @@
             <StackLayout>
                 <Label Margin="7" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center" Text="Мишка і зернинки"/>
                 <Label Margin="7" FontSize="Medium" Text="В індійському храмі підлогу прямокутної форми вимощено однаковими квадратними плитками 1 x 1, на кожну з яких насипано від 0 до k зернинок (k ≤ 30000). Розміри підлоги m х n. Мишка вибігає з лівого нижнього кута підлоги храму i рухається до входу у іншу нірку, розміщену у протилежному кутку. Мишка може рухатись лише праворуч або вперед, збираючи всі зернинки з плитки, на якій вона знаходиться. Знайти маршрут, рухаючись по якому мишка збере найбільшу кількість зернин." />
+                <Image Source="L3T1.gif" />
                 <Label Margin="7" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center" Text="Вхідні дані" />
                 <Label Margin="7" FontSize="Medium" Text="Перший рядок містить числа m та n - розміри підлоги (1 ≤ m, n ≤ 100). Далі йде m рядків, починаючи з верхнього, у кожному з яких розміщено n чисел – кількість зернинок на відповідній плитці." />
                 <Label Margin="7" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center" Text="Вихідні дані" />
@@ -123,8 +125,9 @@
                     <Button Text="Перевірити" Clicked="Button_Clicked_4" HorizontalOptions="FillAndExpand" />
                     <Button Text="Далі" Clicked="Button_Clicked_5" HorizontalOptions="FillAndExpand" />
                 </StackLayout>
-
                 <Line />
+                <Label />
+
             </StackLayout>
         </ScrollView>
     </ContentPage>

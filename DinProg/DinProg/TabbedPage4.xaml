@@ -1,14 +1,34 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="DinProg.TabbedPage4">
+             x:Class="DinProg.TabbedPage4"
+             BarBackgroundColor="#9ceac4">
   <!--Pages can be added as references or inline-->
-    <ContentPage Title="Theory">
-        <StackLayout>
+    <ContentPage Title="Короткі відомості">
+        <ScrollView>
+            <StackLayout>
+                <Label Margin="7" FontSize="Large" FontAttributes="Bold" HorizontalTextAlignment="Center" Text="Найбільша закономірна підпослідовність."/>
+                <Label Margin="7" FontSize="Medium" Text="Найбільша закономірна підпослідовність – це підпослідовність, кожний елемент якої підпорядковуються певному правилу. Найчастіше трапляється найбільша зростаюча підпослідовність."/>
+                <Label Margin="7" FontSize="Medium" Text="Для розв'язання такої задачі візьмемо додатковий масив, у який будемо додавати розмір закономірної підпослідовності, так для першого елемента це буде 1, якщо перший елемент можна використовувати. Для подальшого заповнення масиву знайдемо максимум з попередніх елементів цього масиву, для яких виконується закономірність. Якщо таких елементів немає, то значення дорівнює 1."/>
+                <Label Text=""/>
+                <Label Text=""/>
 
-        </StackLayout>
+                <Line/>
+            </StackLayout>
+        </ScrollView>
     </ContentPage>
-    <ContentPage Title="Tasks" >
-
+    <ContentPage Title="Завдання" >
+        <ScrollView>
+            <StackLayout>
+                <Label Text=""/>
+                <Label Text=""/>
+                <Label Text=""/>
+                <Label Text=""/>
+                <Label Text=""/>
+                <Label Text=""/>
+                <Label Text=""/>
+                <Label Text=""/>
+            </StackLayout>
+        </ScrollView>
     </ContentPage>
 </TabbedPage>

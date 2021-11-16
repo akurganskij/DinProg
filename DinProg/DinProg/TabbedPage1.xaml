@@ -24,6 +24,7 @@
                         </FormattedString>
                     </Label.FormattedText>
                 </Label>
+                <Image Source="L0I1.jpg" />
                 <Label Margin="7" FontSize="Medium" Text="Як можна побачити друге число Фібоначчі треба обраховувати 5 разів! І ось на цьому місці повинно виникати питання, яким чином можна обраховувати усі числа Фібоначчі лише один раз. Для цього треба використати динамічне програмування."/>
                 <Label Margin="7" FontSize="Medium" HorizontalTextAlignment="Center" Text="Динамічне програмування"/>
                 <Label Margin="7" FontSize="Medium" FontAttributes="Bold" Text="Динамічне програмування (скорочено ДП) – метод розв'язку оптимізаційних задач шляхом розбиття їх на більш прості. "/>

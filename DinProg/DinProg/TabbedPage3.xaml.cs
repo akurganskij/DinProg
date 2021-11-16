@@ -14,7 +14,7 @@ namespace DinProg
     public partial class TabbedPage3 : TabbedPage
     {
         private Entry[,] entries = new Entry[6, 5];
-        private static int m1 = 5, n1 = 5;
+        private static int m1 = 3, n1 = 3;
         private bool[,] T1matrix = new bool[5, 5];
         private int[,] T1nums = new int[5, 5];
         private Frame[,] frames = new Frame[m1, n1];
@@ -26,13 +26,14 @@ namespace DinProg
         public TabbedPage3()
         {
             InitializeComponent();
-            grid1_generator(5, 5);
+            grid1_generator(3, 3);
             T1lastcoords = new Tuple<int, int>(-1, -1);
             grid2_generator();
 
         }
         private void grid1_generator(int m, int n)
         {
+            frames = new Frame[m, n];
             DropGestureRecognizer[,] Drop = new DropGestureRecognizer[m, n];
             Image img = new Image()
             {

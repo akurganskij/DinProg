@@ -105,6 +105,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="index.png" />
+    <Content Include="L0I1.jpg" />
+    <Content Include="L1T2.jpg" />
+    <Content Include="L1T5.jpg" />
+    <Content Include="L2T1.gif" />
+    <Content Include="L3I1.gif" />
+    <Content Include="L3T1.gif" />
     <Content Include="mouseL3T1.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LargeTile.scale-100.png" />

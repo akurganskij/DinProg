@@ -43,6 +43,7 @@
             <StackLayout>
                 <Label Margin="7" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center" Text="Садівник-художник"/>
                 <Label Margin="7" FontSize="Medium" Text="Після посадки дерев садівнику потрібно їх пофарбувати. У його розпорядженні є фарба трьох кольорів: біла, синя і помаранчева. Скількома способами він може пофарбувати N дерев, якщо ніякі два однакові кольори не можуть бути поруч?"/>
+                <Image Source="L2T1.gif" IsAnimationPlaying="True" />
                 <Label Margin="7" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center" Text="Вхідні дані"/>
                 <Label Margin="7" FontSize="Medium" Text="Кількість дерев N (1 ≤ N ≤ 50)."/>
                 <Label Margin="7" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center" Text="Вихідні дані"/>
@@ -130,6 +131,7 @@
                 <Label Margin="7" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center" Text="Космічні загарбники"/>
                 <Label Margin="7" FontSize="Medium" Text="Петрик написав свій варіант відомої гри ''Космічні загарбники''. Гра полягає у наступному. На землю нападають кораблі космічних загарбників. Вони вишукуванні рядами у верхній частині екрану. Гравець керує лазерною пушкою, яка знаходиться у нижнього краю екрану у одному зі стовбців. За одну дію гравець може перемістити пушку ліворуч або праворуч, або здійснити постріл вертикально вгору. Якщо гравець робить постріл, то він знищує найближчий корабель прибульців у тому стовбці, у якому знаходиться пушка."/>
                 <Label Margin="7" FontSize="Medium" Text="На відміну від оригінальної гри, у Петриковому варіанті кораблі прибульців стоять на місці і не можуть стріляти, тому гравець не може програти. Допоможіть Петрику знищити усі кораблі прибульців за мінімальну кількість дій."/>
+                <Image Source="L1T2.jpg" />
                 <Label Margin="7" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center" Text="Вхідні дані"/>
                 <Label Margin="7" FontSize="Medium" Text="Перший рядок вхідного файлу містить числа n та p - кількість стовбців та номер стовбця, у якому спочатку знаходиться пушка (1 ≤ n ≤ 100, 1 ≤ p ≤ n). Другий рядок містить n чисел a1, a2, ..., an, де ai - кількість пришельців у i-му стовбці (1 ≤ ai ≤ 100)."/>
                 <Label Margin="7" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center" Text="Вихідні дані"/>
@@ -282,6 +284,7 @@
                 <Label Margin="7" FontSize="Medium" Text="Ви можете згадати хоча б одного свого знайомого до двадцятирічного віку, який у дитинстві не грав у комп`ютерні ігри? Якщо так, то можливо ви і самі не знайомі з цією розвагою? Втім, труднощів при розв`язуванні цієї задачі це створити не повинно."/>
                 <Label Margin="7" FontSize="Medium" Text="У багатьох старих іграх з двомірною графікою можна зіткнутись з подібною ситуацією. Якийсь Герой стрибає по платформам (або островкам), які висять у повітрі. Він повинен перебратись від одного краю екрану до іншого. При цьому при стрибку з однієї платформи на сусідню, у Героя витрачається |y2-y1| одиниць Енергії, де y1 і y2 – висоти, на яких розміщено ці платформи. Крім того, у Героя є Суперприйом, який дозволяє перестрибнути через платформу, але на це витрачається 3*|y3-y1| одиниць Енергії. Звичайно ж, Енергію слід витрачати максимально економно."/>
                 <Label Margin="7" FontSize="Medium" Text="Припустимо, що вам відомі координати всіх платформ у порядку від лівого краю до правого. Чи зможете ви знайти, яка мінімальна кількість Енергії знадобиться Герою, щоб дістатись з першої платформи до останньої?"/>
+                <Image Source="L1T5.jpg" />
                 <Label Margin="7" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center" Text="Вхідні дані"/>
                 <Label Margin="7" FontSize="Medium" Text="У першому рядку вхідного файлу задано кількість платформ n (1 ≤ n ≤ 30000). Другий рядок містить n натуральних чисел, які не перевищують 30000 – висоти, на яких розміщено платформи."/>
                 <Label Margin="7" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center" Text="Вихідні дані"/>
@@ -360,7 +363,7 @@
                 <Label Margin="7" FontSize="Medium" x:Name="T5Label" />
                 <Button Clicked="Button_Clicked_4" Text="Перевірити"/>
                 
-
+            
                 <Label Margin="7" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center" Text="Пограбування будинків"/>
                 <Label Margin="7" FontSize="Medium" Text="Ви - професіонал своєї справи і плануєте пограбувати ряд будинків уздовж вулиці. У кожному будинку захована певна сума грошей. Єдине, що заважає Вам грабувати - так це те, що сусідні будинки пов'язані системою безпеки: буде переданий сигнал в поліцію, якщо два сусідні будинки будуть пограбовані в один і той же вечір."/>
                 <Label Margin="7" FontSize="Medium" Text="Знаючи кількість грошей в кожному будинку, визначте максимальну суму, яку Ви зможете пограбувати сьогодні ввечері без попередження поліції."/>
@@ -386,11 +389,19 @@
 
                 <Label Margin="7" FontSize="Medium" x:Name="T6Label" />
                 <Button Clicked="Button_Clicked_5" Text="Перевірити"/>
-                
-                
-                <Line />
-              
-                
+
+                <Label/>
+                <Label/>
+                <Label/>
+                <Label/>
+                <Label/>
+                <Label/>
+                <Label/>
+                <Label/>
+                <Label/>
+                <Label/>
+                <Label/>
+                <Label/>
             </StackLayout>
         </ScrollView>
     </ContentPage>
