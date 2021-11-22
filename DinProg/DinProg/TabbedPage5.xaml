@@ -22,7 +22,20 @@
                 <Label Margin="7" FontSize="Medium" Text="Виведіть максимальну вартість товару, вага якого на перевищує w." />
                 <Label Margin="7" FontSize="Medium" Text="Розв'язок" />
                 <Label Margin="7" FontSize="Medium" Text="Розв'яжемо задачу для наступних вхідних даних:" />
-
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <Frame Margin="5" HorizontalOptions="Center" Grid.Column="1">
+                        <StackLayout>
+                            <Label Margin="7" FontSize="Medium" HorizontalTextAlignment="Center" Text="10      2"/>
+                            <Label Margin="7" FontSize="Medium" HorizontalTextAlignment="Center" Text=" 5     10"/>
+                            <Label Margin="7" FontSize="Medium" HorizontalTextAlignment="Center" Text=" 6     19"/>
+                        </StackLayout>
+                    </Frame>
+                </Grid>
                 <Label Margin="7" FontSize="Medium" Text="Візьмемо таблицю, у якій у першому рядку буде ємність від 1 до 10, а у першому стовпчику будуть ваги:" />
                 <Grid Margin="5">
                     <Grid.RowDefinitions>
