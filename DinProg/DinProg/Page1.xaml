@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="DinProg.Page1">
     <ContentPage.Content>
-        <StackLayout BackgroundColor="#41C9F1" >
+        <StackLayout BackgroundColor="Beige" >
             <ScrollView >
             <Grid Margin="5,5">
                 <Grid.RowDefinitions>
@@ -23,51 +23,51 @@
                 </Grid.ColumnDefinitions>
                 
                 <StackLayout Grid.Column="0" Grid.Row="0">
-                    <Button Clicked="Button1_Clicked" ImageSource="index.png" BackgroundColor="Transparent"/>
+                    <Button Clicked="Button1_Clicked" ImageSource="levels.png" BackgroundColor="Transparent"/>
                     <Label Text="Рівень 0" HorizontalTextAlignment="Center" TextColor="DarkBlue" FontSize="Medium"/>
                 </StackLayout>
                 <StackLayout Grid.Column="2" Grid.Row="0">
-                    <Button Clicked="Button2_Clicked" ImageSource="index.png" BackgroundColor="Transparent"/>
+                        <Button Clicked="Button2_Clicked" ImageSource="levels.png" BackgroundColor="Transparent"/>
                     <Label Text="Рівень 1" HorizontalTextAlignment="Center" TextColor="DarkBlue" FontSize="Medium"/>
                 </StackLayout>
                 <StackLayout Grid.Column="4" Grid.Row="0">
-                    <Button ImageSource="index.png" BackgroundColor="Transparent" Clicked="Button3_Clicked"/>
+                        <Button ImageSource="levels.png" BackgroundColor="Transparent" Clicked="Button3_Clicked"/>
                     <Label Text="Рівень 2" HorizontalTextAlignment="Center" TextColor="DarkBlue" FontSize="Medium"/>
                 </StackLayout>
                 <StackLayout Grid.Column="0" Grid.Row="2">
-                    <Button ImageSource="index.png" BackgroundColor="Transparent" Clicked="Button4_Clicked"/>
+                        <Button ImageSource="levels.png" BackgroundColor="Transparent" Clicked="Button4_Clicked"/>
                     <Label Text="Рівень 3" HorizontalTextAlignment="Center" TextColor="DarkBlue" FontSize="Medium"/>
                 </StackLayout>
                 <StackLayout Grid.Column="2" Grid.Row="2">
-                    <Button ImageSource="index.png" BackgroundColor="Transparent" Clicked="Button5_Clicked"/>
+                        <Button ImageSource="levels.png" BackgroundColor="Transparent" Clicked="Button5_Clicked"/>
                     <Label Text="Рівень 4" HorizontalTextAlignment="Center" TextColor="DarkBlue" FontSize="Medium"/>
                 </StackLayout>
                 <StackLayout Grid.Column="4" Grid.Row="2">
-                    <Button ImageSource="index.png" BackgroundColor="Transparent" Clicked="Button6_Clicked"/>
+                        <Button ImageSource="levels.png" BackgroundColor="Transparent" Clicked="Button6_Clicked"/>
                     <Label Text="Рівень 5" HorizontalTextAlignment="Center" TextColor="DarkBlue" FontSize="Medium"/>
                 </StackLayout>
                 <StackLayout Grid.Column="0" Grid.Row="4">
-                    <Button ImageSource="index.png" BackgroundColor="Transparent" Clicked="Button7_Clicked"/>
+                        <Button ImageSource="levels.png" BackgroundColor="Transparent" Clicked="Button7_Clicked"/>
                     <Label Text="Рівень 6" HorizontalTextAlignment="Center" TextColor="DarkBlue" FontSize="Medium"/>
                 </StackLayout>
                 <StackLayout Grid.Column="2" Grid.Row="4">
-                    <Button ImageSource="index.png" BackgroundColor="Transparent" Clicked="Button8_Clicked"/>
+                        <Button ImageSource="levels.png" BackgroundColor="Transparent" Clicked="Button8_Clicked"/>
                     <Label Text="Рівень 7" HorizontalTextAlignment="Center" TextColor="DarkBlue" FontSize="Medium"/>
                 </StackLayout>
                 <StackLayout Grid.Column="4" Grid.Row="4">
-                    <Button ImageSource="index.png" BackgroundColor="Transparent" Clicked="Button9_Clicked"/>
+                        <Button ImageSource="levels.png" BackgroundColor="Transparent" Clicked="Button9_Clicked"/>
                     <Label Text="Рівень 8" HorizontalTextAlignment="Center" TextColor="DarkBlue" FontSize="Medium"/>
                 </StackLayout>
                     <StackLayout Grid.Column="0" Grid.Row="6">
-                        <Button ImageSource="index.png" BackgroundColor="Transparent" Clicked="Button10_Clicked"/>
+                        <Button ImageSource="levels.png" BackgroundColor="Transparent" Clicked="Button10_Clicked"/>
                         <Label Text="Рівень 9" HorizontalTextAlignment="Center" TextColor="DarkBlue" FontSize="Medium"/>
                     </StackLayout>
                     <StackLayout Grid.Column="2" Grid.Row="6">
-                        <Button ImageSource="index.png" BackgroundColor="Transparent" Clicked="Button11_Clicked"/>
+                        <Button ImageSource="levels.png" BackgroundColor="Transparent" Clicked="Button11_Clicked"/>
                         <Label Text="Рівень 10" HorizontalTextAlignment="Center" TextColor="DarkBlue" FontSize="Medium"/>
                     </StackLayout>
                     <StackLayout Grid.Column="4" Grid.Row="6">
-                        <Button ImageSource="index.png" BackgroundColor="Transparent" Clicked="Button12_Clicked"/>
+                        <Button ImageSource="levels.png" BackgroundColor="Transparent" Clicked="Button12_Clicked"/>
                         <Label Text="Рівень 11" HorizontalTextAlignment="Center" TextColor="DarkBlue" FontSize="Medium"/>
                     </StackLayout>
                 </Grid>
