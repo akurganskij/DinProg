@@ -1,14 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="DinProg.TabbedPage5">
+             x:Class="DinProg.TabbedPage5"
+            BarBackgroundColor="#9ceac4">
   <!--Pages can be added as references or inline-->
-    <ContentPage Title="Theory">
-        <StackLayout>
-
-        </StackLayout>
+    <ContentPage Title="Короткі відомості">
+        <ScrollView>
+            <StackLayout>
+                
+            </StackLayout>
+        </ScrollView>
     </ContentPage>
-    <ContentPage Title="Tasks" >
+    <ContentPage Title="Завдання" >
 
     </ContentPage>
 </TabbedPage>
