@@ -24,11 +24,247 @@
                 <Label Margin="7" FontSize="Medium" Text="Розв'яжемо задачу для наступних вхідних даних:" />
 
                 <Label Margin="7" FontSize="Medium" Text="Візьмемо таблицю, у якій у першому рядку буде ємність від 1 до 10, а у першому стовпчику будуть ваги:" />
+                <Grid Margin="5">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1"/>
+                        <RowDefinition />
+                        <RowDefinition Height="1"/>
+                        <RowDefinition />
+                        <RowDefinition Height="1"/>
+                        <RowDefinition />
+                        <RowDefinition Height="1"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1"/>
+                        <ColumnDefinition Width="{OnPlatform Android=0.75*, UWP=*}"/>
+                        <ColumnDefinition Width="1"/>
+                        <ColumnDefinition Width="{OnPlatform Android=0.75*, UWP=*}"/>
+                        <ColumnDefinition Width="1"/>
+                        <ColumnDefinition Width="{OnPlatform Android=0.75*, UWP=*}"/>
+                        <ColumnDefinition Width="1"/>
+                        <ColumnDefinition Width="{OnPlatform Android=0.75*, UWP=*}"/>
+                        <ColumnDefinition Width="1"/>
+                        <ColumnDefinition Width="{OnPlatform Android=0.75*, UWP=*}"/>
+                        <ColumnDefinition Width="1"/>
+                        <ColumnDefinition Width="{OnPlatform Android=1.2*, UWP=*}"/>
+                        <ColumnDefinition Width="1"/>
+                        <ColumnDefinition Width="{OnPlatform Android=1.2*, UWP=*}"/>
+                        <ColumnDefinition Width="1"/>
+                        <ColumnDefinition Width="{OnPlatform Android=1.2*, UWP=*}"/>
+                        <ColumnDefinition Width="1"/>
+                        <ColumnDefinition Width="{OnPlatform Android=1.2*, UWP=*}"/>
+                        <ColumnDefinition Width="1"/>
+                        <ColumnDefinition Width="{OnPlatform Android=1.2*, UWP=*}"/>
+                        <ColumnDefinition Width="1"/>
+                        <ColumnDefinition Width="{OnPlatform Android=1.2*, UWP=*}"/>
+                        <ColumnDefinition Width="1"/>
+                    </Grid.ColumnDefinitions>
 
+                    <BoxView BackgroundColor="Black" HeightRequest="1" Grid.Row="0" Grid.ColumnSpan="23" />
+                    <BoxView BackgroundColor="Black" HeightRequest="1" Grid.Row="2" Grid.ColumnSpan="23" />
+                    <BoxView BackgroundColor="Black" HeightRequest="1" Grid.Row="4" Grid.ColumnSpan="23" />
+                    <BoxView BackgroundColor="Black" HeightRequest="1" Grid.Row="6" Grid.ColumnSpan="23" />
+
+                    <BoxView BackgroundColor="Black" HeightRequest="1" Grid.Column="0" Grid.RowSpan="7" />
+                    <BoxView BackgroundColor="Black" HeightRequest="1" Grid.Column="2" Grid.RowSpan="7" />
+                    <BoxView BackgroundColor="Black" HeightRequest="1" Grid.Column="4" Grid.RowSpan="7" />
+                    <BoxView BackgroundColor="Black" HeightRequest="1" Grid.Column="6" Grid.RowSpan="7" />
+                    <BoxView BackgroundColor="Black" HeightRequest="1" Grid.Column="8" Grid.RowSpan="7" />
+                    <BoxView BackgroundColor="Black" HeightRequest="1" Grid.Column="10" Grid.RowSpan="7" />
+                    <BoxView BackgroundColor="Black" HeightRequest="1" Grid.Column="12" Grid.RowSpan="7" />
+                    <BoxView BackgroundColor="Black" HeightRequest="1" Grid.Column="14" Grid.RowSpan="7" />
+                    <BoxView BackgroundColor="Black" HeightRequest="1" Grid.Column="16" Grid.RowSpan="7" />
+                    <BoxView BackgroundColor="Black" HeightRequest="1" Grid.Column="18" Grid.RowSpan="7" />
+                    <BoxView BackgroundColor="Black" HeightRequest="1" Grid.Column="20" Grid.RowSpan="7" />
+                    <BoxView BackgroundColor="Black" HeightRequest="1" Grid.Column="22" Grid.RowSpan="7" />
+
+                    <Label FontSize="Small" HorizontalTextAlignment="Center" Text="5" Grid.Column="1" Grid.Row="3"/>
+                    <Label FontSize="Small" HorizontalTextAlignment="Center" Text="6" Grid.Column="1" Grid.Row="5"/>
+
+                    <Label FontSize="Small" HorizontalTextAlignment="Center" Text="1" Grid.Column="3" Grid.Row="1"/>
+                    <Label FontSize="Small" HorizontalTextAlignment="Center" Text="2" Grid.Column="5" Grid.Row="1"/>
+                    <Label FontSize="Small" HorizontalTextAlignment="Center" Text="3" Grid.Column="7" Grid.Row="1"/>
+                    <Label FontSize="Small" HorizontalTextAlignment="Center" Text="4" Grid.Column="9" Grid.Row="1"/>
+                    <Label FontSize="Small" HorizontalTextAlignment="Center" Text="5" Grid.Column="11" Grid.Row="1"/>
+                    <Label FontSize="Small" HorizontalTextAlignment="Center" Text="6" Grid.Column="13" Grid.Row="1"/>
+                    <Label FontSize="Small" HorizontalTextAlignment="Center" Text="7" Grid.Column="15" Grid.Row="1"/>
+                    <Label FontSize="Small" HorizontalTextAlignment="Center" Text="8" Grid.Column="17" Grid.Row="1"/>
+                    <Label FontSize="Small" HorizontalTextAlignment="Center" Text="9" Grid.Column="19" Grid.Row="1"/>
+                    <Label FontSize="Small" HorizontalTextAlignment="Center" Text="10" Grid.Column="21" Grid.Row="1"/>
+
+                </Grid>
                 <Label Margin="7" FontSize="Medium" Text="Заповнимо кожну ємність для ваги 5 максимальною вартістю предметів, які можна туди покласти." />
-                
-                <Label Margin="7" FontSize="Medium" Text="Далі, для наступної ваги у ємність напишемо максимум зі значення з попереднього рядка і максимальної вартості предметів, які можна туди покласти." />
+                <Grid Margin="5">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1"/>
+                        <RowDefinition />
+                        <RowDefinition Height="1"/>
+                        <RowDefinition />
+                        <RowDefinition Height="1"/>
+                        <RowDefinition />
+                        <RowDefinition Height="1"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1"/>
+                        <ColumnDefinition Width="{OnPlatform Android=0.75*, UWP=*}"/>
+                        <ColumnDefinition Width="1"/>
+                        <ColumnDefinition Width="{OnPlatform Android=0.75*, UWP=*}"/>
+                        <ColumnDefinition Width="1"/>
+                        <ColumnDefinition Width="{OnPlatform Android=0.75*, UWP=*}"/>
+                        <ColumnDefinition Width="1"/>
+                        <ColumnDefinition Width="{OnPlatform Android=0.75*, UWP=*}"/>
+                        <ColumnDefinition Width="1"/>
+                        <ColumnDefinition Width="{OnPlatform Android=0.75*, UWP=*}"/>
+                        <ColumnDefinition Width="1"/>
+                        <ColumnDefinition Width="{OnPlatform Android=1.2*, UWP=*}"/>
+                        <ColumnDefinition Width="1"/>
+                        <ColumnDefinition Width="{OnPlatform Android=1.2*, UWP=*}"/>
+                        <ColumnDefinition Width="1"/>
+                        <ColumnDefinition Width="{OnPlatform Android=1.2*, UWP=*}"/>
+                        <ColumnDefinition Width="1"/>
+                        <ColumnDefinition Width="{OnPlatform Android=1.2*, UWP=*}"/>
+                        <ColumnDefinition Width="1"/>
+                        <ColumnDefinition Width="{OnPlatform Android=1.2*, UWP=*}"/>
+                        <ColumnDefinition Width="1"/>
+                        <ColumnDefinition Width="{OnPlatform Android=1.2*, UWP=*}"/>
+                        <ColumnDefinition Width="1"/>
+                    </Grid.ColumnDefinitions>
 
+                    <BoxView BackgroundColor="Black" HeightRequest="1" Grid.Row="0" Grid.ColumnSpan="23" />
+                    <BoxView BackgroundColor="Black" HeightRequest="1" Grid.Row="2" Grid.ColumnSpan="23" />
+                    <BoxView BackgroundColor="Black" HeightRequest="1" Grid.Row="4" Grid.ColumnSpan="23" />
+                    <BoxView BackgroundColor="Black" HeightRequest="1" Grid.Row="6" Grid.ColumnSpan="23" />
+
+                    <BoxView BackgroundColor="Black" HeightRequest="1" Grid.Column="0" Grid.RowSpan="7" />
+                    <BoxView BackgroundColor="Black" HeightRequest="1" Grid.Column="2" Grid.RowSpan="7" />
+                    <BoxView BackgroundColor="Black" HeightRequest="1" Grid.Column="4" Grid.RowSpan="7" />
+                    <BoxView BackgroundColor="Black" HeightRequest="1" Grid.Column="6" Grid.RowSpan="7" />
+                    <BoxView BackgroundColor="Black" HeightRequest="1" Grid.Column="8" Grid.RowSpan="7" />
+                    <BoxView BackgroundColor="Black" HeightRequest="1" Grid.Column="10" Grid.RowSpan="7" />
+                    <BoxView BackgroundColor="Black" HeightRequest="1" Grid.Column="12" Grid.RowSpan="7" />
+                    <BoxView BackgroundColor="Black" HeightRequest="1" Grid.Column="14" Grid.RowSpan="7" />
+                    <BoxView BackgroundColor="Black" HeightRequest="1" Grid.Column="16" Grid.RowSpan="7" />
+                    <BoxView BackgroundColor="Black" HeightRequest="1" Grid.Column="18" Grid.RowSpan="7" />
+                    <BoxView BackgroundColor="Black" HeightRequest="1" Grid.Column="20" Grid.RowSpan="7" />
+                    <BoxView BackgroundColor="Black" HeightRequest="1" Grid.Column="22" Grid.RowSpan="7" />
+
+                    <Label FontSize="Small" HorizontalTextAlignment="Center" Text="5" Grid.Column="1" Grid.Row="3"/>
+                    <Label FontSize="Small" HorizontalTextAlignment="Center" Text="6" Grid.Column="1" Grid.Row="5"/>
+
+                    <Label FontSize="Small" HorizontalTextAlignment="Center" Text="1" Grid.Column="3" Grid.Row="1"/>
+                    <Label FontSize="Small" HorizontalTextAlignment="Center" Text="2" Grid.Column="5" Grid.Row="1"/>
+                    <Label FontSize="Small" HorizontalTextAlignment="Center" Text="3" Grid.Column="7" Grid.Row="1"/>
+                    <Label FontSize="Small" HorizontalTextAlignment="Center" Text="4" Grid.Column="9" Grid.Row="1"/>
+                    <Label FontSize="Small" HorizontalTextAlignment="Center" Text="5" Grid.Column="11" Grid.Row="1"/>
+                    <Label FontSize="Small" HorizontalTextAlignment="Center" Text="6" Grid.Column="13" Grid.Row="1"/>
+                    <Label FontSize="Small" HorizontalTextAlignment="Center" Text="7" Grid.Column="15" Grid.Row="1"/>
+                    <Label FontSize="Small" HorizontalTextAlignment="Center" Text="8" Grid.Column="17" Grid.Row="1"/>
+                    <Label FontSize="Small" HorizontalTextAlignment="Center" Text="9" Grid.Column="19" Grid.Row="1"/>
+                    <Label FontSize="Small" HorizontalTextAlignment="Center" Text="10" Grid.Column="21" Grid.Row="1"/>
+
+                    <Label FontSize="Small" HorizontalTextAlignment="Center" Text="0" Grid.Column="3" Grid.Row="3"/>
+                    <Label FontSize="Small" HorizontalTextAlignment="Center" Text="0" Grid.Column="5" Grid.Row="3"/>
+                    <Label FontSize="Small" HorizontalTextAlignment="Center" Text="0" Grid.Column="7" Grid.Row="3"/>
+                    <Label FontSize="Small" HorizontalTextAlignment="Center" Text="0" Grid.Column="9" Grid.Row="3"/>
+                    <Label FontSize="Small" HorizontalTextAlignment="Center" Text="10" Grid.Column="11" Grid.Row="3"/>
+                    <Label FontSize="Small" HorizontalTextAlignment="Center" Text="10" Grid.Column="13" Grid.Row="3"/>
+                    <Label FontSize="Small" HorizontalTextAlignment="Center" Text="10" Grid.Column="15" Grid.Row="3"/>
+                    <Label FontSize="Small" HorizontalTextAlignment="Center" Text="10" Grid.Column="17" Grid.Row="3"/>
+                    <Label FontSize="Small" HorizontalTextAlignment="Center" Text="10" Grid.Column="19" Grid.Row="3"/>
+                    <Label FontSize="Small" HorizontalTextAlignment="Center" Text="20" Grid.Column="21" Grid.Row="3"/>
+
+                </Grid>
+                <Label Margin="7" FontSize="Medium" Text="Далі, для наступної ваги у ємність напишемо максимум зі значення з попереднього рядка і максимальної вартості предметів, які можна туди покласти." />
+                <Grid Margin="5">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1"/>
+                        <RowDefinition />
+                        <RowDefinition Height="1"/>
+                        <RowDefinition />
+                        <RowDefinition Height="1"/>
+                        <RowDefinition />
+                        <RowDefinition Height="1"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1"/>
+                        <ColumnDefinition Width="{OnPlatform Android=0.75*, UWP=*}"/>
+                        <ColumnDefinition Width="1"/>
+                        <ColumnDefinition Width="{OnPlatform Android=0.75*, UWP=*}"/>
+                        <ColumnDefinition Width="1"/>
+                        <ColumnDefinition Width="{OnPlatform Android=0.75*, UWP=*}"/>
+                        <ColumnDefinition Width="1"/>
+                        <ColumnDefinition Width="{OnPlatform Android=0.75*, UWP=*}"/>
+                        <ColumnDefinition Width="1"/>
+                        <ColumnDefinition Width="{OnPlatform Android=0.75*, UWP=*}"/>
+                        <ColumnDefinition Width="1"/>
+                        <ColumnDefinition Width="{OnPlatform Android=1.2*, UWP=*}"/>
+                        <ColumnDefinition Width="1"/>
+                        <ColumnDefinition Width="{OnPlatform Android=1.2*, UWP=*}"/>
+                        <ColumnDefinition Width="1"/>
+                        <ColumnDefinition Width="{OnPlatform Android=1.2*, UWP=*}"/>
+                        <ColumnDefinition Width="1"/>
+                        <ColumnDefinition Width="{OnPlatform Android=1.2*, UWP=*}"/>
+                        <ColumnDefinition Width="1"/>
+                        <ColumnDefinition Width="{OnPlatform Android=1.2*, UWP=*}"/>
+                        <ColumnDefinition Width="1"/>
+                        <ColumnDefinition Width="{OnPlatform Android=1.2*, UWP=*}"/>
+                        <ColumnDefinition Width="1"/>
+                    </Grid.ColumnDefinitions>
+                    
+                    <BoxView BackgroundColor="Black" HeightRequest="1" Grid.Row="0" Grid.ColumnSpan="23" />
+                    <BoxView BackgroundColor="Black" HeightRequest="1" Grid.Row="2" Grid.ColumnSpan="23" />
+                    <BoxView BackgroundColor="Black" HeightRequest="1" Grid.Row="4" Grid.ColumnSpan="23" />
+                    <BoxView BackgroundColor="Black" HeightRequest="1" Grid.Row="6" Grid.ColumnSpan="23" />
+
+                    <BoxView BackgroundColor="Black" HeightRequest="1" Grid.Column="0" Grid.RowSpan="7" />
+                    <BoxView BackgroundColor="Black" HeightRequest="1" Grid.Column="2" Grid.RowSpan="7" />
+                    <BoxView BackgroundColor="Black" HeightRequest="1" Grid.Column="4" Grid.RowSpan="7" />
+                    <BoxView BackgroundColor="Black" HeightRequest="1" Grid.Column="6" Grid.RowSpan="7" />
+                    <BoxView BackgroundColor="Black" HeightRequest="1" Grid.Column="8" Grid.RowSpan="7" />
+                    <BoxView BackgroundColor="Black" HeightRequest="1" Grid.Column="10" Grid.RowSpan="7" />
+                    <BoxView BackgroundColor="Black" HeightRequest="1" Grid.Column="12" Grid.RowSpan="7" />
+                    <BoxView BackgroundColor="Black" HeightRequest="1" Grid.Column="14" Grid.RowSpan="7" />
+                    <BoxView BackgroundColor="Black" HeightRequest="1" Grid.Column="16" Grid.RowSpan="7" />
+                    <BoxView BackgroundColor="Black" HeightRequest="1" Grid.Column="18" Grid.RowSpan="7" />
+                    <BoxView BackgroundColor="Black" HeightRequest="1" Grid.Column="20" Grid.RowSpan="7" />
+                    <BoxView BackgroundColor="Black" HeightRequest="1" Grid.Column="22" Grid.RowSpan="7" />
+
+                    <Label FontSize="Small" HorizontalTextAlignment="Center" Text="5" Grid.Column="1" Grid.Row="3"/>
+                    <Label FontSize="Small" HorizontalTextAlignment="Center" Text="6" Grid.Column="1" Grid.Row="5"/>
+
+                    <Label FontSize="Small" HorizontalTextAlignment="Center" Text="1" Grid.Column="3" Grid.Row="1"/>
+                    <Label FontSize="Small" HorizontalTextAlignment="Center" Text="2" Grid.Column="5" Grid.Row="1"/>
+                    <Label FontSize="Small" HorizontalTextAlignment="Center" Text="3" Grid.Column="7" Grid.Row="1"/>
+                    <Label FontSize="Small" HorizontalTextAlignment="Center" Text="4" Grid.Column="9" Grid.Row="1"/>
+                    <Label FontSize="Small" HorizontalTextAlignment="Center" Text="5" Grid.Column="11" Grid.Row="1"/>
+                    <Label FontSize="Small" HorizontalTextAlignment="Center" Text="6" Grid.Column="13" Grid.Row="1"/>
+                    <Label FontSize="Small" HorizontalTextAlignment="Center" Text="7" Grid.Column="15" Grid.Row="1"/>
+                    <Label FontSize="Small" HorizontalTextAlignment="Center" Text="8" Grid.Column="17" Grid.Row="1"/>
+                    <Label FontSize="Small" HorizontalTextAlignment="Center" Text="9" Grid.Column="19" Grid.Row="1"/>
+                    <Label FontSize="Small" HorizontalTextAlignment="Center" Text="10" Grid.Column="21" Grid.Row="1"/>
+
+                    <Label FontSize="Small" HorizontalTextAlignment="Center" Text="0" Grid.Column="3" Grid.Row="3"/>
+                    <Label FontSize="Small" HorizontalTextAlignment="Center" Text="0" Grid.Column="5" Grid.Row="3"/>
+                    <Label FontSize="Small" HorizontalTextAlignment="Center" Text="0" Grid.Column="7" Grid.Row="3"/>
+                    <Label FontSize="Small" HorizontalTextAlignment="Center" Text="0" Grid.Column="9" Grid.Row="3"/>
+                    <Label FontSize="Small" HorizontalTextAlignment="Center" Text="10" Grid.Column="11" Grid.Row="3"/>
+                    <Label FontSize="Small" HorizontalTextAlignment="Center" Text="10" Grid.Column="13" Grid.Row="3"/>
+                    <Label FontSize="Small" HorizontalTextAlignment="Center" Text="10" Grid.Column="15" Grid.Row="3"/>
+                    <Label FontSize="Small" HorizontalTextAlignment="Center" Text="10" Grid.Column="17" Grid.Row="3"/>
+                    <Label FontSize="Small" HorizontalTextAlignment="Center" Text="10" Grid.Column="19" Grid.Row="3"/>
+                    <Label FontSize="Small" HorizontalTextAlignment="Center" Text="20" Grid.Column="21" Grid.Row="3"/>
+
+                    <Label FontSize="Small" HorizontalTextAlignment="Center" Text="0" Grid.Column="3" Grid.Row="5"/>
+                    <Label FontSize="Small" HorizontalTextAlignment="Center" Text="0" Grid.Column="5" Grid.Row="5"/>
+                    <Label FontSize="Small" HorizontalTextAlignment="Center" Text="0" Grid.Column="7" Grid.Row="5"/>
+                    <Label FontSize="Small" HorizontalTextAlignment="Center" Text="0" Grid.Column="9" Grid.Row="5"/>
+                    <Label FontSize="Small" HorizontalTextAlignment="Center" Text="10" Grid.Column="11" Grid.Row="5"/>
+                    <Label FontSize="Small" HorizontalTextAlignment="Center" Text="19" Grid.Column="13" Grid.Row="5"/>
+                    <Label FontSize="Small" HorizontalTextAlignment="Center" Text="19" Grid.Column="15" Grid.Row="5"/>
+                    <Label FontSize="Small" HorizontalTextAlignment="Center" Text="19" Grid.Column="17" Grid.Row="5"/>
+                    <Label FontSize="Small" HorizontalTextAlignment="Center" Text="19" Grid.Column="19" Grid.Row="5"/>
+                    <Label FontSize="Small" HorizontalTextAlignment="Center" Text="20" Grid.Column="21" Grid.Row="5"/>
+                </Grid>
                 <Label Margin="7" FontSize="Medium" Text="Тоді відповіддю на задачу буде значення у нижній клітинці останнього стовпчика, тобто 20." />
             </StackLayout>
         </ScrollView>
