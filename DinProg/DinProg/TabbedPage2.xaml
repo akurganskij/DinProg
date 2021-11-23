@@ -39,8 +39,8 @@
         </ScrollView>
     </ContentPage>
     <ContentPage Title="Завдання" >
-        <ScrollView x:Name="scrollview1">
-            <StackLayout x:Name="stack1">
+        <ScrollView>
+            <StackLayout>
                 <Label Margin="7" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center" Text="Садівник-художник"/>
                 <Label Margin="7" FontSize="Medium" Text="Після посадки дерев садівнику потрібно їх пофарбувати. У його розпорядженні є фарба трьох кольорів: біла, синя і помаранчева. Скількома способами він може пофарбувати N дерев, якщо ніякі два однакові кольори не можуть бути поруч?"/>
                 <Image Source="L2T1.gif" IsAnimationPlaying="True" />
