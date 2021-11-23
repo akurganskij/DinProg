@@ -283,6 +283,291 @@
         </ScrollView>
     </ContentPage>
     <ContentPage Title="Завдання" >
+        <ScrollView>
+            <StackLayout>
+                <Label Margin="7" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center" Text="Розклад вечірок"/>
+                <Label Margin="7" FontSize="Medium" Text="Ви тільки що отримали ще один рахунок, який не в змозі оплатити із-за того, що не вистачає грошей. На жаль, це сталось уже не в перший раз, тому Ви вирішили вияснити причини своїх постійних фінансових утруднень. Причина була достатньо банальною: левова частина грошей, як правило, щезала на вечірках."/>
+                <Label Margin="7" FontSize="Medium" Text="Ви почали думати, як вирішити проблему там, де вона виникає - а саме на самих вечірках. Ви вирішили увести ліміт на бюджет вечірок, при цьому отримуючи від них максимальне задоволення."/>
+                <Label Margin="7" FontSize="Medium" Text="Ви наперед взнали величину вступного внеску для кожної вечірки і оцінили кількість задоволення, яке зможете отримати там. Цей список було складено легко, але як підібрати вечірки, на яких Вам буде найбільш цікаво, і які сумарно не будуть перевищувати Ваш бюджет?"/>
+                <Label Margin="7" FontSize="Medium" Text="Напишіть програму, яка знайде оптимальну підмножину вечірок, на яких буде найбільш весело. Врахуйте, що використовувати повністю увесь бюджет не обов'язково. Досягніть найбільших веселощів, не перевищуючи при цьому бюджет."/>
+                <Label Margin="7" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center" Text="Вхідні дані"/>
+                <Label Margin="7" FontSize="Medium" Text="Перший рядок містить величину загального бюджету та кількість вечірок n. Кожен з наступних n рядків містить два числа. Перше число вказує на вартість вхідного квитка на вечірки. Вартість вечірок коливається від 5 до 25 франків. Друге число містить кількість задоволення, отримуваного від відвідування вечірки - воно є цілим числом від 0 до 10. Загальний бюджет не перевищує 500, усього є не більше 100 вечірок. Усі числа відокремлено одним пропуском."/>
+                <Label Margin="7" FontSize="Medium" Text="Вхідні дані містять декілька тестів. Останній рядок містить 0 0 і не опрацьовується."/>
+                <Label Margin="7" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center" Text="Вихідні дані"/>
+                <Label Margin="7" FontSize="Medium" Text="Для кожного тесту виведіть у окремому рядку сумарне значення вартостей вхідних квитків на вечірки, а також загальну суму отриманого задоволення. Числа, що виводяться, слід відокремлювати пропуском."/>
+                <Label Margin="7" FontSize="Medium" Text=""/>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <Frame Grid.Column="1">
+                        <StackLayout>
+                            <Label Margin="7" FontSize="Medium" HorizontalTextAlignment="Center" Text="35    3"/>
+                            <Label Margin="7" FontSize="Medium" HorizontalTextAlignment="Center" Text="12    3"/>
+                            <Label Margin="7" FontSize="Medium" HorizontalTextAlignment="Center" Text="15    8"/>
+                            <Label Margin="7" FontSize="Medium" HorizontalTextAlignment="Center" Text="16    9"/>
+                        </StackLayout>
+                    </Frame>
+                </Grid>
+                <Grid Margin="5">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1" />
+                        <RowDefinition />
+                        <RowDefinition Height="1" />
+                        <RowDefinition />
+                        <RowDefinition Height="1" />
+                        <RowDefinition />
+                        <RowDefinition Height="1" />
+                        <RowDefinition />
+                        <RowDefinition Height="1" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1" />
+                        <ColumnDefinition />
+                        <ColumnDefinition Width="1" />
+                        <ColumnDefinition />
+                        <ColumnDefinition Width="1" />
+                        <ColumnDefinition />
+                        <ColumnDefinition Width="1" />
+                        <ColumnDefinition />
+                        <ColumnDefinition Width="1" />
+                        <ColumnDefinition />
+                        <ColumnDefinition Width="1" />
+                        <ColumnDefinition />
+                        <ColumnDefinition Width="1" />
+                        <ColumnDefinition />
+                        <ColumnDefinition Width="1" />
+                        <ColumnDefinition />
+                        <ColumnDefinition Width="1" />
+                    </Grid.ColumnDefinitions>
+                    <BoxView BackgroundColor="Black" Grid.Row="0" Grid.ColumnSpan="17" />
+                    <BoxView BackgroundColor="Black" Grid.Row="2" Grid.ColumnSpan="17" />
+                    <BoxView BackgroundColor="Black" Grid.Row="4" Grid.ColumnSpan="17" />
+                    <BoxView BackgroundColor="Black" Grid.Row="6" Grid.ColumnSpan="17" />
+                    <BoxView BackgroundColor="Black" Grid.Row="8" Grid.ColumnSpan="17" />
 
+                    <BoxView BackgroundColor="Black" Grid.Column="0" Grid.RowSpan="9" />
+                    <BoxView BackgroundColor="Black" Grid.Column="2" Grid.RowSpan="9" />
+                    <BoxView BackgroundColor="Black" Grid.Column="4" Grid.RowSpan="9" />
+                    <BoxView BackgroundColor="Black" Grid.Column="6" Grid.RowSpan="9" />
+                    <BoxView BackgroundColor="Black" Grid.Column="8" Grid.RowSpan="9" />
+                    <BoxView BackgroundColor="Black" Grid.Column="10" Grid.RowSpan="9" />
+                    <BoxView BackgroundColor="Black" Grid.Column="12" Grid.RowSpan="9" />
+                    <BoxView BackgroundColor="Black" Grid.Column="14" Grid.RowSpan="9" />
+                    <BoxView BackgroundColor="Black" Grid.Column="16" Grid.RowSpan="9" />
+
+                    <Label Margin="7" FontSize="Medium" Text="12" Grid.Column="1" Grid.Row="3" HorizontalTextAlignment="Center"/>
+                    <Label Margin="7" FontSize="Medium" Text="15" Grid.Column="1" Grid.Row="5" HorizontalTextAlignment="Center"/>
+                    <Label Margin="7" FontSize="Medium" Text="16" Grid.Column="1" Grid.Row="7" HorizontalTextAlignment="Center"/>
+
+                    <Label Margin="7" FontSize="Medium" Text="12" Grid.Column="3" Grid.Row="1" HorizontalTextAlignment="Center"/>
+                    <Label Margin="7" FontSize="Medium" Text="13" Grid.Column="5" Grid.Row="1" HorizontalTextAlignment="Center"/>
+                    <Label Margin="7" FontSize="Medium" Text="14" Grid.Column="7" Grid.Row="1" HorizontalTextAlignment="Center"/>
+                    <Label Margin="7" FontSize="Medium" Text="15" Grid.Column="9" Grid.Row="1" HorizontalTextAlignment="Center"/>
+                    <Label Margin="7" FontSize="Medium" Text="16" Grid.Column="11" Grid.Row="1" HorizontalTextAlignment="Center"/>
+                    <Label Margin="7" FontSize="Medium" Text="17" Grid.Column="13" Grid.Row="1" HorizontalTextAlignment="Center"/>
+                    <Label Margin="7" FontSize="Medium" Text="18" Grid.Column="15" Grid.Row="1" HorizontalTextAlignment="Center"/>
+
+                    <Editor FontSize="Medium" Grid.Column="3" Grid.Row="3" x:Name="L5T1Line1Edit1" />
+                    <Editor FontSize="Medium" Grid.Column="5" Grid.Row="3" x:Name="L5T1Line1Edit2" />
+                    <Editor FontSize="Medium" Grid.Column="7" Grid.Row="3" x:Name="L5T1Line1Edit3" />
+                    <Editor FontSize="Medium" Grid.Column="9" Grid.Row="3" x:Name="L5T1Line1Edit4" />
+                    <Editor FontSize="Medium" Grid.Column="11" Grid.Row="3" x:Name="L5T1Line1Edit5" />
+                    <Editor FontSize="Medium" Grid.Column="13" Grid.Row="3" x:Name="L5T1Line1Edit6" />
+                    <Editor FontSize="Medium" Grid.Column="15" Grid.Row="3" x:Name="L5T1Line1Edit7" />
+
+                    <Editor FontSize="Medium" Grid.Column="3" Grid.Row="5" x:Name="L5T1Line2Edit1" />
+                    <Editor FontSize="Medium" Grid.Column="5" Grid.Row="5" x:Name="L5T1Line2Edit2" />
+                    <Editor FontSize="Medium" Grid.Column="7" Grid.Row="5" x:Name="L5T1Line2Edit3" />
+                    <Editor FontSize="Medium" Grid.Column="9" Grid.Row="5" x:Name="L5T1Line2Edit4" />
+                    <Editor FontSize="Medium" Grid.Column="11" Grid.Row="5" x:Name="L5T1Line2Edit5" />
+                    <Editor FontSize="Medium" Grid.Column="13" Grid.Row="5" x:Name="L5T1Line2Edit6" />
+                    <Editor FontSize="Medium" Grid.Column="15" Grid.Row="5" x:Name="L5T1Line2Edit7" />
+
+                    <Editor FontSize="Medium" Grid.Column="3" Grid.Row="7" x:Name="L5T1Line3Edit1" />
+                    <Editor FontSize="Medium" Grid.Column="5" Grid.Row="7" x:Name="L5T1Line3Edit2" />
+                    <Editor FontSize="Medium" Grid.Column="7" Grid.Row="7" x:Name="L5T1Line3Edit3" />
+                    <Editor FontSize="Medium" Grid.Column="9" Grid.Row="7" x:Name="L5T1Line3Edit4" />
+                    <Editor FontSize="Medium" Grid.Column="11" Grid.Row="7" x:Name="L5T1Line3Edit5" />
+                    <Editor FontSize="Medium" Grid.Column="13" Grid.Row="7" x:Name="L5T1Line3Edit6" />
+                    <Editor FontSize="Medium" Grid.Column="15" Grid.Row="7" x:Name="L5T1Line3Edit7" />
+                </Grid>
+                <Grid Margin="5">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1" />
+                        <RowDefinition />
+                        <RowDefinition Height="1" />
+                        <RowDefinition />
+                        <RowDefinition Height="1" />
+                        <RowDefinition />
+                        <RowDefinition Height="1" />
+                        <RowDefinition />
+                        <RowDefinition Height="1" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1" />
+                        <ColumnDefinition />
+                        <ColumnDefinition Width="1" />
+                        <ColumnDefinition />
+                        <ColumnDefinition Width="1" />
+                        <ColumnDefinition />
+                        <ColumnDefinition Width="1" />
+                        <ColumnDefinition />
+                        <ColumnDefinition Width="1" />
+                        <ColumnDefinition />
+                        <ColumnDefinition Width="1" />
+                        <ColumnDefinition />
+                        <ColumnDefinition Width="1" />
+                        <ColumnDefinition />
+                        <ColumnDefinition Width="1" />
+                        <ColumnDefinition />
+                        <ColumnDefinition Width="1" />
+                    </Grid.ColumnDefinitions>
+                    <BoxView BackgroundColor="Black" Grid.Row="0" Grid.ColumnSpan="17" />
+                    <BoxView BackgroundColor="Black" Grid.Row="2" Grid.ColumnSpan="17" />
+                    <BoxView BackgroundColor="Black" Grid.Row="4" Grid.ColumnSpan="17" />
+                    <BoxView BackgroundColor="Black" Grid.Row="6" Grid.ColumnSpan="17" />
+                    <BoxView BackgroundColor="Black" Grid.Row="8" Grid.ColumnSpan="17" />
+
+                    <BoxView BackgroundColor="Black" Grid.Column="0" Grid.RowSpan="9" />
+                    <BoxView BackgroundColor="Black" Grid.Column="2" Grid.RowSpan="9" />
+                    <BoxView BackgroundColor="Black" Grid.Column="4" Grid.RowSpan="9" />
+                    <BoxView BackgroundColor="Black" Grid.Column="6" Grid.RowSpan="9" />
+                    <BoxView BackgroundColor="Black" Grid.Column="8" Grid.RowSpan="9" />
+                    <BoxView BackgroundColor="Black" Grid.Column="10" Grid.RowSpan="9" />
+                    <BoxView BackgroundColor="Black" Grid.Column="12" Grid.RowSpan="9" />
+                    <BoxView BackgroundColor="Black" Grid.Column="14" Grid.RowSpan="9" />
+                    <BoxView BackgroundColor="Black" Grid.Column="16" Grid.RowSpan="9" />
+
+                    <Label Margin="7" FontSize="Medium" Text="19" Grid.Column="1" Grid.Row="1" HorizontalTextAlignment="Center"/>
+                    <Label Margin="7" FontSize="Medium" Text="20" Grid.Column="3" Grid.Row="1" HorizontalTextAlignment="Center"/>
+                    <Label Margin="7" FontSize="Medium" Text="21" Grid.Column="5" Grid.Row="1" HorizontalTextAlignment="Center"/>
+                    <Label Margin="7" FontSize="Medium" Text="22" Grid.Column="7" Grid.Row="1" HorizontalTextAlignment="Center"/>
+                    <Label Margin="7" FontSize="Medium" Text="23" Grid.Column="9" Grid.Row="1" HorizontalTextAlignment="Center"/>
+                    <Label Margin="7" FontSize="Medium" Text="24" Grid.Column="11" Grid.Row="1" HorizontalTextAlignment="Center"/>
+                    <Label Margin="7" FontSize="Medium" Text="25" Grid.Column="13" Grid.Row="1" HorizontalTextAlignment="Center"/>
+                    <Label Margin="7" FontSize="Medium" Text="26" Grid.Column="15" Grid.Row="1" HorizontalTextAlignment="Center"/>
+
+                    <Editor FontSize="Medium" Grid.Column="1" Grid.Row="3" x:Name="L5T1Line1Edit8" />
+                    <Editor FontSize="Medium" Grid.Column="3" Grid.Row="3" x:Name="L5T1Line1Edit9" />
+                    <Editor FontSize="Medium" Grid.Column="5" Grid.Row="3" x:Name="L5T1Line1Edit10" />
+                    <Editor FontSize="Medium" Grid.Column="7" Grid.Row="3" x:Name="L5T1Line1Edit11" />
+                    <Editor FontSize="Medium" Grid.Column="9" Grid.Row="3" x:Name="L5T1Line1Edit12" />
+                    <Editor FontSize="Medium" Grid.Column="11" Grid.Row="3" x:Name="L5T1Line1Edit13" />
+                    <Editor FontSize="Medium" Grid.Column="13" Grid.Row="3" x:Name="L5T1Line1Edit14" />
+                    <Editor FontSize="Medium" Grid.Column="15" Grid.Row="3" x:Name="L5T1Line1Edit15" />
+
+                    <Editor FontSize="Medium" Grid.Column="1" Grid.Row="5" x:Name="L5T1Line2Edit8" />
+                    <Editor FontSize="Medium" Grid.Column="3" Grid.Row="5" x:Name="L5T1Line2Edit9" />
+                    <Editor FontSize="Medium" Grid.Column="5" Grid.Row="5" x:Name="L5T1Line2Edit10" />
+                    <Editor FontSize="Medium" Grid.Column="7" Grid.Row="5" x:Name="L5T1Line2Edit11" />
+                    <Editor FontSize="Medium" Grid.Column="9" Grid.Row="5" x:Name="L5T1Line2Edit12" />
+                    <Editor FontSize="Medium" Grid.Column="11" Grid.Row="5" x:Name="L5T1Line2Edit13" />
+                    <Editor FontSize="Medium" Grid.Column="13" Grid.Row="5" x:Name="L5T1Line2Edit14" />
+                    <Editor FontSize="Medium" Grid.Column="15" Grid.Row="5" x:Name="L5T1Line2Edit15" />
+
+                    <Editor FontSize="Medium" Grid.Column="1" Grid.Row="7" x:Name="L5T1Line3Edit8" />
+                    <Editor FontSize="Medium" Grid.Column="3" Grid.Row="7" x:Name="L5T1Line3Edit9" />
+                    <Editor FontSize="Medium" Grid.Column="5" Grid.Row="7" x:Name="L5T1Line3Edit10" />
+                    <Editor FontSize="Medium" Grid.Column="7" Grid.Row="7" x:Name="L5T1Line3Edit11" />
+                    <Editor FontSize="Medium" Grid.Column="9" Grid.Row="7" x:Name="L5T1Line3Edit12" />
+                    <Editor FontSize="Medium" Grid.Column="11" Grid.Row="7" x:Name="L5T1Line3Edit13" />
+                    <Editor FontSize="Medium" Grid.Column="13" Grid.Row="7" x:Name="L5T1Line3Edit14" />
+                    <Editor FontSize="Medium" Grid.Column="15" Grid.Row="7" x:Name="L5T1Line3Edit15" />
+                </Grid>
+                <Grid Margin="5">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1" />
+                        <RowDefinition />
+                        <RowDefinition Height="1" />
+                        <RowDefinition />
+                        <RowDefinition Height="1" />
+                        <RowDefinition />
+                        <RowDefinition Height="1" />
+                        <RowDefinition />
+                        <RowDefinition Height="1" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1" />
+                        <ColumnDefinition />
+                        <ColumnDefinition Width="1" />
+                        <ColumnDefinition />
+                        <ColumnDefinition Width="1" />
+                        <ColumnDefinition />
+                        <ColumnDefinition Width="1" />
+                        <ColumnDefinition />
+                        <ColumnDefinition Width="1" />
+                        <ColumnDefinition />
+                        <ColumnDefinition Width="1" />
+                        <ColumnDefinition />
+                        <ColumnDefinition Width="1" />
+                        <ColumnDefinition />
+                        <ColumnDefinition Width="1" />
+                        <ColumnDefinition />
+                        <ColumnDefinition Width="1" />
+                    </Grid.ColumnDefinitions>
+                    <BoxView BackgroundColor="Black" Grid.Row="0" Grid.ColumnSpan="17" />
+                    <BoxView BackgroundColor="Black" Grid.Row="2" Grid.ColumnSpan="17" />
+                    <BoxView BackgroundColor="Black" Grid.Row="4" Grid.ColumnSpan="17" />
+                    <BoxView BackgroundColor="Black" Grid.Row="6" Grid.ColumnSpan="17" />
+                    <BoxView BackgroundColor="Black" Grid.Row="8" Grid.ColumnSpan="17" />
+
+                    <BoxView BackgroundColor="Black" Grid.Column="0" Grid.RowSpan="9" />
+                    <BoxView BackgroundColor="Black" Grid.Column="2" Grid.RowSpan="9" />
+                    <BoxView BackgroundColor="Black" Grid.Column="4" Grid.RowSpan="9" />
+                    <BoxView BackgroundColor="Black" Grid.Column="6" Grid.RowSpan="9" />
+                    <BoxView BackgroundColor="Black" Grid.Column="8" Grid.RowSpan="9" />
+                    <BoxView BackgroundColor="Black" Grid.Column="10" Grid.RowSpan="9" />
+                    <BoxView BackgroundColor="Black" Grid.Column="12" Grid.RowSpan="9" />
+                    <BoxView BackgroundColor="Black" Grid.Column="14" Grid.RowSpan="9" />
+                    <BoxView BackgroundColor="Black" Grid.Column="16" Grid.RowSpan="9" />
+
+                    <Label Margin="7" FontSize="Medium" Text="19" Grid.Column="1" Grid.Row="1" HorizontalTextAlignment="Center"/>
+                    <Label Margin="7" FontSize="Medium" Text="20" Grid.Column="3" Grid.Row="1" HorizontalTextAlignment="Center"/>
+                    <Label Margin="7" FontSize="Medium" Text="21" Grid.Column="5" Grid.Row="1" HorizontalTextAlignment="Center"/>
+                    <Label Margin="7" FontSize="Medium" Text="22" Grid.Column="7" Grid.Row="1" HorizontalTextAlignment="Center"/>
+                    <Label Margin="7" FontSize="Medium" Text="23" Grid.Column="9" Grid.Row="1" HorizontalTextAlignment="Center"/>
+                    <Label Margin="7" FontSize="Medium" Text="24" Grid.Column="11" Grid.Row="1" HorizontalTextAlignment="Center"/>
+                    <Label Margin="7" FontSize="Medium" Text="25" Grid.Column="13" Grid.Row="1" HorizontalTextAlignment="Center"/>
+                    <Label Margin="7" FontSize="Medium" Text="26" Grid.Column="15" Grid.Row="1" HorizontalTextAlignment="Center"/>
+
+                    <Editor FontSize="Medium" Grid.Column="1" Grid.Row="3" x:Name="L5T1Line1Edit16" />
+                    <Editor FontSize="Medium" Grid.Column="3" Grid.Row="3" x:Name="L5T1Line1Edit17" />
+                    <Editor FontSize="Medium" Grid.Column="5" Grid.Row="3" x:Name="L5T1Line1Edit18" />
+                    <Editor FontSize="Medium" Grid.Column="7" Grid.Row="3" x:Name="L5T1Line1Edit19" />
+                    <Editor FontSize="Medium" Grid.Column="9" Grid.Row="3" x:Name="L5T1Line1Edit20" />
+                    <Editor FontSize="Medium" Grid.Column="11" Grid.Row="3" x:Name="L5T1Line1Edit21" />
+                    <Editor FontSize="Medium" Grid.Column="13" Grid.Row="3" x:Name="L5T1Line1Edit22" />
+                    <Editor FontSize="Medium" Grid.Column="15" Grid.Row="3" x:Name="L5T1Line1Edit23" />
+
+                    <Editor FontSize="Medium" Grid.Column="1" Grid.Row="5" x:Name="L5T1Line2Edit16" />
+                    <Editor FontSize="Medium" Grid.Column="3" Grid.Row="5" x:Name="L5T1Line2Edit17" />
+                    <Editor FontSize="Medium" Grid.Column="5" Grid.Row="5" x:Name="L5T1Line2Edit18" />
+                    <Editor FontSize="Medium" Grid.Column="7" Grid.Row="5" x:Name="L5T1Line2Edit19" />
+                    <Editor FontSize="Medium" Grid.Column="9" Grid.Row="5" x:Name="L5T1Line2Edit20" />
+                    <Editor FontSize="Medium" Grid.Column="11" Grid.Row="5" x:Name="L5T1Line2Edit21" />
+                    <Editor FontSize="Medium" Grid.Column="13" Grid.Row="5" x:Name="L5T1Line2Edit22" />
+                    <Editor FontSize="Medium" Grid.Column="15" Grid.Row="5" x:Name="L5T1Line2Edit23" />
+
+                    <Editor FontSize="Medium" Grid.Column="1" Grid.Row="7" x:Name="L5T1Line3Edit16" />
+                    <Editor FontSize="Medium" Grid.Column="3" Grid.Row="7" x:Name="L5T1Line3Edit17" />
+                    <Editor FontSize="Medium" Grid.Column="5" Grid.Row="7" x:Name="L5T1Line3Edit18" />
+                    <Editor FontSize="Medium" Grid.Column="7" Grid.Row="7" x:Name="L5T1Line3Edit19" />
+                    <Editor FontSize="Medium" Grid.Column="9" Grid.Row="7" x:Name="L5T1Line3Edit20" />
+                    <Editor FontSize="Medium" Grid.Column="11" Grid.Row="7" x:Name="L5T1Line3Edit21" />
+                    <Editor FontSize="Medium" Grid.Column="13" Grid.Row="7" x:Name="L5T1Line3Edit22" />
+                    <Editor FontSize="Medium" Grid.Column="15" Grid.Row="7" x:Name="L5T1Line3Edit23" />
+                </Grid>
+                
+                <Label Margin="7" FontSize="Medium" x:Name="Lblforouttask1L5"/>
+                <Button Text="Перевірити" Clicked="Button_Clicked"/>
+
+                <Label Margin="7" FontSize="Medium" Text=""/>
+                <Label Margin="7" FontSize="Medium" Text=""/>
+                
+            </StackLayout>
+        </ScrollView>
     </ContentPage>
 </TabbedPage>
