@@ -153,20 +153,21 @@
                     <BoxView BackgroundColor="Black" HeightRequest="1" Grid.Column="8" Grid.RowSpan="5" />
                     <BoxView BackgroundColor="Black" HeightRequest="1" Grid.Column="10" Grid.RowSpan="5" />
                     <BoxView BackgroundColor="Black" HeightRequest="1" Grid.Column="12" Grid.RowSpan="5" />
-                    
-                    
-                    
+
+                    <Label Margin="7" FontSize="Medium" HorizontalTextAlignment="Center" Grid.Row="1" Grid.Column="1" Text="x" />
+                    <Label Margin="7" FontSize="Medium" HorizontalTextAlignment="Center" Grid.Row="3" Grid.Column="1" Text="a" />
+
                     <Editor Keyboard="Numeric" FontSize="Medium" x:Name="edit1l4t2" Grid.Row="1" Grid.Column="3"/>
                     <Editor Keyboard="Numeric" FontSize="Medium" x:Name="edit2l4t2" Grid.Row="1" Grid.Column="5"/>
                     <Editor Keyboard="Numeric" FontSize="Medium" x:Name="edit3l4t2" Grid.Row="1" Grid.Column="7"/>
                     <Editor Keyboard="Numeric" FontSize="Medium" x:Name="edit4l4t2" Grid.Row="1" Grid.Column="9"/>
                     <Editor Keyboard="Numeric" FontSize="Medium" x:Name="edit5l4t2" Grid.Row="1" Grid.Column="11"/>
 
-                    <Editor Keyboard="Numeric" FontSize="Medium" x:Name="edit6l4t2" Grid.Row="1" Grid.Column="3"/>
-                    <Editor Keyboard="Numeric" FontSize="Medium" x:Name="edit7l4t2" Grid.Row="1" Grid.Column="5"/>
-                    <Editor Keyboard="Numeric" FontSize="Medium" x:Name="edit8l4t2" Grid.Row="1" Grid.Column="7"/>
-                    <Editor Keyboard="Numeric" FontSize="Medium" x:Name="edit9l4t2" Grid.Row="1" Grid.Column="9"/>
-                    <Editor Keyboard="Numeric" FontSize="Medium" x:Name="edit10l4t2" Grid.Row="1" Grid.Column="11"/>
+                    <Editor Keyboard="Numeric" FontSize="Medium" x:Name="edit6l4t2" Grid.Row="3" Grid.Column="3"/>
+                    <Editor Keyboard="Numeric" FontSize="Medium" x:Name="edit7l4t2" Grid.Row="3" Grid.Column="5"/>
+                    <Editor Keyboard="Numeric" FontSize="Medium" x:Name="edit8l4t2" Grid.Row="3" Grid.Column="7"/>
+                    <Editor Keyboard="Numeric" FontSize="Medium" x:Name="edit9l4t2" Grid.Row="3" Grid.Column="9"/>
+                    <Editor Keyboard="Numeric" FontSize="Medium" x:Name="edit10l4t2" Grid.Row="3" Grid.Column="11"/>
                 </Grid>
                 <Grid Margin="5">
                     <Grid.RowDefinitions>
