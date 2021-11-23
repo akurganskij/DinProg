@@ -106,18 +106,122 @@
                     <Editor Keyboard="Numeric" FontSize="Medium" x:Name="edit5l4t1" Grid.Row="1" Grid.Column="9"/>
                     <Editor Keyboard="Numeric" FontSize="Medium" x:Name="edit6l4t1" Grid.Row="1" Grid.Column="11"/>
                 </Grid>
+                <Label Margin="7" FontSize="Medium" x:Name="Lblforoutputl4t1"/>
+                <Button Text="Перевірити" Clicked="Button_Clicked"/>
 
                 <Label Margin="7" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center" Text="Найбільша зростаюча підпослідовність"/>
+                <Label Margin="7" FontSize="Medium" Text="Розглянемо послідовність xi, задану наступними співвідношеннями:"/>
+                <Label Margin="7" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center" Text="x0 = a + b, x1 = a – b,"/>
+                <Label Margin="7" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center" Text="xi = (a·xi - 2 + b·xi - 1) mod m, i > 1"/>
+                <Label Margin="7" FontSize="Medium" Text="Для заданого натурального n знайти довжину найбільшої зростаючої підпослідовності x0, x1, x2, …, xn."/>
+                <Label Margin="7" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center" Text="Вхідні дані"/>
+                <Label Margin="7" FontSize="Medium" Text="Кожен тест складається з одного рядка, який містить чотири натуральних числа a, b, m, n (a ≥ b, 1 ≤ a, b, m, n ≤ 10^6). Кількість тестових випадків у одному тесті не перевищує 20."/>
+                <Label Margin="7" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center" Text="Вихідні дані"/>
+                <Label Margin="7" FontSize="Medium" Text="Для кожного тесту в окремому рядку вивести довжину найбільшої зростаючої підпослідовності."/>
                 <Label Text=""/>
-                <Label Text=""/>
-                <Label Text=""/>
-                <Label Text=""/>
-                <Label Text=""/>
-                <Label Text=""/>
-                <Label Text=""/>
-                <Label Text=""/>
-                <Label Text=""/>
-                <Label Text=""/>
+                <Grid Margin="5">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1"/>
+                        <RowDefinition />
+                        <RowDefinition Height="1"/>
+                        <RowDefinition />
+                        <RowDefinition Height="1"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1"/>
+                        <ColumnDefinition />
+                        <ColumnDefinition Width="1"/>
+                        <ColumnDefinition />
+                        <ColumnDefinition Width="1"/>
+                        <ColumnDefinition />
+                        <ColumnDefinition Width="1"/>
+                        <ColumnDefinition />
+                        <ColumnDefinition Width="1"/>
+                        <ColumnDefinition />
+                        <ColumnDefinition Width="1"/>
+                        <ColumnDefinition />
+                        <ColumnDefinition Width="1"/>
+                    </Grid.ColumnDefinitions>
+                    <BoxView BackgroundColor="Black" HeightRequest="1" Grid.Row="0" Grid.ColumnSpan="13" />
+                    <BoxView BackgroundColor="Black" HeightRequest="1" Grid.Row="2" Grid.ColumnSpan="13" />
+                    <BoxView BackgroundColor="Black" HeightRequest="1" Grid.Row="4" Grid.ColumnSpan="13" />
+
+                    <BoxView BackgroundColor="Black" HeightRequest="1" Grid.Column="0" Grid.RowSpan="5" />
+                    <BoxView BackgroundColor="Black" HeightRequest="1" Grid.Column="2" Grid.RowSpan="5" />
+                    <BoxView BackgroundColor="Black" HeightRequest="1" Grid.Column="4" Grid.RowSpan="5" />
+                    <BoxView BackgroundColor="Black" HeightRequest="1" Grid.Column="6" Grid.RowSpan="5" />
+                    <BoxView BackgroundColor="Black" HeightRequest="1" Grid.Column="8" Grid.RowSpan="5" />
+                    <BoxView BackgroundColor="Black" HeightRequest="1" Grid.Column="10" Grid.RowSpan="5" />
+                    <BoxView BackgroundColor="Black" HeightRequest="1" Grid.Column="12" Grid.RowSpan="5" />
+                    
+                    
+                    
+                    <Editor Keyboard="Numeric" FontSize="Medium" x:Name="edit1l4t2" Grid.Row="1" Grid.Column="3"/>
+                    <Editor Keyboard="Numeric" FontSize="Medium" x:Name="edit2l4t2" Grid.Row="1" Grid.Column="5"/>
+                    <Editor Keyboard="Numeric" FontSize="Medium" x:Name="edit3l4t2" Grid.Row="1" Grid.Column="7"/>
+                    <Editor Keyboard="Numeric" FontSize="Medium" x:Name="edit4l4t2" Grid.Row="1" Grid.Column="9"/>
+                    <Editor Keyboard="Numeric" FontSize="Medium" x:Name="edit5l4t2" Grid.Row="1" Grid.Column="11"/>
+
+                    <Editor Keyboard="Numeric" FontSize="Medium" x:Name="edit6l4t2" Grid.Row="1" Grid.Column="3"/>
+                    <Editor Keyboard="Numeric" FontSize="Medium" x:Name="edit7l4t2" Grid.Row="1" Grid.Column="5"/>
+                    <Editor Keyboard="Numeric" FontSize="Medium" x:Name="edit8l4t2" Grid.Row="1" Grid.Column="7"/>
+                    <Editor Keyboard="Numeric" FontSize="Medium" x:Name="edit9l4t2" Grid.Row="1" Grid.Column="9"/>
+                    <Editor Keyboard="Numeric" FontSize="Medium" x:Name="edit10l4t2" Grid.Row="1" Grid.Column="11"/>
+                </Grid>
+                <Grid Margin="5">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1"/>
+                        <RowDefinition />
+                        <RowDefinition Height="1"/>
+                        <RowDefinition />
+                        <RowDefinition Height="1"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1"/>
+                        <ColumnDefinition />
+                        <ColumnDefinition Width="1"/>
+                        <ColumnDefinition />
+                        <ColumnDefinition Width="1"/>
+                        <ColumnDefinition />
+                        <ColumnDefinition Width="1"/>
+                        <ColumnDefinition />
+                        <ColumnDefinition Width="1"/>
+                        <ColumnDefinition />
+                        <ColumnDefinition Width="1"/>
+                        <ColumnDefinition />
+                        <ColumnDefinition Width="1"/>
+                    </Grid.ColumnDefinitions>
+                    <BoxView BackgroundColor="Black" HeightRequest="1" Grid.Row="0" Grid.ColumnSpan="13" />
+                    <BoxView BackgroundColor="Black" HeightRequest="1" Grid.Row="2" Grid.ColumnSpan="13" />
+                    <BoxView BackgroundColor="Black" HeightRequest="1" Grid.Row="4" Grid.ColumnSpan="13" />
+
+                    <BoxView BackgroundColor="Black" HeightRequest="1" Grid.Column="0" Grid.RowSpan="5" />
+                    <BoxView BackgroundColor="Black" HeightRequest="1" Grid.Column="2" Grid.RowSpan="5" />
+                    <BoxView BackgroundColor="Black" HeightRequest="1" Grid.Column="4" Grid.RowSpan="5" />
+                    <BoxView BackgroundColor="Black" HeightRequest="1" Grid.Column="6" Grid.RowSpan="5" />
+                    <BoxView BackgroundColor="Black" HeightRequest="1" Grid.Column="8" Grid.RowSpan="5" />
+                    <BoxView BackgroundColor="Black" HeightRequest="1" Grid.Column="10" Grid.RowSpan="5" />
+                    <BoxView BackgroundColor="Black" HeightRequest="1" Grid.Column="12" Grid.RowSpan="5" />
+
+                    <Editor Keyboard="Numeric" FontSize="Medium" x:Name="edit11l4t2" Grid.Row="1" Grid.Column="1"/>
+                    <Editor Keyboard="Numeric" FontSize="Medium" x:Name="edit12l4t2" Grid.Row="1" Grid.Column="3"/>
+                    <Editor Keyboard="Numeric" FontSize="Medium" x:Name="edit13l4t2" Grid.Row="1" Grid.Column="5"/>
+                    <Editor Keyboard="Numeric" FontSize="Medium" x:Name="edit14l4t2" Grid.Row="1" Grid.Column="7"/>
+                    <Editor Keyboard="Numeric" FontSize="Medium" x:Name="edit15l4t2" Grid.Row="1" Grid.Column="9"/>
+                    <Editor Keyboard="Numeric" FontSize="Medium" x:Name="edit16l4t2" Grid.Row="1" Grid.Column="11"/>
+
+                    <Editor Keyboard="Numeric" FontSize="Medium" x:Name="edit17l4t2" Grid.Row="3" Grid.Column="1"/>
+                    <Editor Keyboard="Numeric" FontSize="Medium" x:Name="edit18l4t2" Grid.Row="3" Grid.Column="3"/>
+                    <Editor Keyboard="Numeric" FontSize="Medium" x:Name="edit19l4t2" Grid.Row="3" Grid.Column="5"/>
+                    <Editor Keyboard="Numeric" FontSize="Medium" x:Name="edit20l4t2" Grid.Row="3" Grid.Column="7"/>
+                    <Editor Keyboard="Numeric" FontSize="Medium" x:Name="edit21l4t2" Grid.Row="3" Grid.Column="9"/>
+                    <Editor Keyboard="Numeric" FontSize="Medium" x:Name="edit22l4t2" Grid.Row="3" Grid.Column="11"/>
+                </Grid>
+                <Label Margin="7" FontSize="Medium" x:Name="Lblforoutputl4t2"/>
+                <Button Text="Перевірити" Clicked="Button_Clicked_1"/>
+                
+                <Line />
+                
             </StackLayout>
         </ScrollView>
     </ContentPage>
