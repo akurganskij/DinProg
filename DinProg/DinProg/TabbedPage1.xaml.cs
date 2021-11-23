@@ -15,6 +15,7 @@ namespace DinProg
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class TabbedPage1 : TabbedPage
     {
+        private int attempts = 0;
         public TabbedPage1()
         {
             InitializeComponent();
@@ -22,6 +23,7 @@ namespace DinProg
 
         private void Button_Clicked(object sender, EventArgs e)
         {
+            attempts++;
             int res = 0;
             if (task1.IsChecked) res++;
             if (task2.IsChecked) res++;
@@ -37,6 +39,11 @@ namespace DinProg
             {
                 ResLabel.Text = "Спробуйте ще раз";
                 ResLabel.TextColor = Color.Red;
+            }
+            if(attempts > 4)
+            {
+                attempts = 0;
+                this.CurrentPage = this.Children[0];
             }
         }
     }

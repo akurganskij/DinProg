@@ -23,6 +23,7 @@ namespace DinProg
         private int T1res = 0;
         private bool T1Attemptres = false, T3correct = false;
         private int T3x = 2, T3y = 3;
+        private int[] attempt = new int[3] { 0, 0, 0 };
         public TabbedPage3()
         {
             InitializeComponent();
@@ -117,6 +118,7 @@ namespace DinProg
         }
         private void Button_Clicked(object sender, EventArgs e)
         {
+            attempt[0]++;
             int res = T1result();
             if (Convert.ToInt32(T1LabelforSum.Text) == res)
             {
@@ -132,6 +134,11 @@ namespace DinProg
             T1res = 0;
             T1LabelforSum.Text = "";
             T1LabelforOutput.Text = "";
+            if(attempt[0] > 4)
+            {
+                attempt[0] = 0;
+                this.CurrentPage = this.Children[0];
+            }
         }
 
         private void Button_Clicked_1(object sender, EventArgs e)
@@ -165,6 +172,7 @@ namespace DinProg
         }
         private void Button_Clicked_2(object sender, EventArgs e)
         {
+            attempt[1]++;
             int[,] answer = new int[6, 5];
             int[,] nums = new int[6, 5];
             for (int i = 5; i >= 0; --i)
@@ -190,14 +198,25 @@ namespace DinProg
                     else entries[i, j].BackgroundColor = Color.LightPink;
                 }
             }
+            if (attempt[1] > 4)
+            {
+                attempt[1] = 0;
+                this.CurrentPage = this.Children[0];
+            }
         }
 
         private void Button_Clicked_3(object sender, EventArgs e)
         {
+            attempt[2]++;
             T3Result.Text = "";
             if ((sender as Button).BackgroundColor == Color.LightGray) (sender as Button).BackgroundColor = Color.LightGreen;
             else if ((sender as Button).BackgroundColor == Color.LightGreen) (sender as Button).BackgroundColor = Color.LightPink;
             else if ((sender as Button).BackgroundColor == Color.LightPink) (sender as Button).BackgroundColor = Color.LightGreen;
+            if (attempt[2] > 4)
+            {
+                attempt[2] = 0;
+                this.CurrentPage = this.Children[0];
+            }
         }
 
         private void Button_Clicked_4(object sender, EventArgs e)
