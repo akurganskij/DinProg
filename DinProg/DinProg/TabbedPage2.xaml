@@ -374,16 +374,16 @@
                 <Label Margin="7" FontSize="Medium" FontAttributes="Bold" Text="Визначте, які будинки будуть пограбовані:" />
                 <ScrollView Orientation="Horizontal">
                     <StackLayout Orientation="Horizontal">
-                        <Button Text="7" TextColor="Black" x:Name="T6button1" Clicked="T6button_Clicked" Grid.Row="1" Grid.Column="1" BackgroundColor="LightGray"/>
-                        <Button Text="2" TextColor="Black" x:Name="T6button2" Clicked="T6button_Clicked" Grid.Row="1" Grid.Column="3" BackgroundColor="LightGray"/>
-                        <Button Text="3" TextColor="Black" x:Name="T6button3" Clicked="T6button_Clicked" Grid.Row="1" Grid.Column="5" BackgroundColor="LightGray"/>
-                        <Button Text="9" TextColor="Black" x:Name="T6button4" Clicked="T6button_Clicked" Grid.Row="1" Grid.Column="7" BackgroundColor="LightGray"/>
-                        <Button Text="3" TextColor="Black" x:Name="T6button5" Clicked="T6button_Clicked" Grid.Row="1" Grid.Column="9" BackgroundColor="LightGray"/>
-                        <Button Text="11" TextColor="Black" x:Name="T6button6" Clicked="T6button_Clicked" Grid.Row="1" Grid.Column="11" BackgroundColor="LightGray"/>
-                        <Button Text="15" TextColor="Black" x:Name="T6button7" Clicked="T6button_Clicked" Grid.Row="1" Grid.Column="13" BackgroundColor="LightGray"/>
-                        <Button Text="13" TextColor="Black" x:Name="T6button8" Clicked="T6button_Clicked" Grid.Row="1" Grid.Column="15" BackgroundColor="LightGray"/>
-                        <Button Text="4" TextColor="Black" x:Name="T6button9" Clicked="T6button_Clicked" Grid.Row="1" Grid.Column="17" BackgroundColor="LightGray"/>
-                        <Button Text="6" TextColor="Black" x:Name="T6button10" Clicked="T6button_Clicked" Grid.Row="1" Grid.Column="19" BackgroundColor="LightGray"/>
+                        <Button HorizontalOptions="FillAndExpand" Text="7" TextColor="Black" x:Name="T6button1" Clicked="T6button_Clicked" Grid.Row="1" Grid.Column="1" BackgroundColor="LightGray"/>
+                        <Button HorizontalOptions="FillAndExpand" Text="2" TextColor="Black" x:Name="T6button2" Clicked="T6button_Clicked" Grid.Row="1" Grid.Column="3" BackgroundColor="LightGray"/>
+                        <Button HorizontalOptions="FillAndExpand" Text="3" TextColor="Black" x:Name="T6button3" Clicked="T6button_Clicked" Grid.Row="1" Grid.Column="5" BackgroundColor="LightGray"/>
+                        <Button HorizontalOptions="FillAndExpand" Text="9" TextColor="Black" x:Name="T6button4" Clicked="T6button_Clicked" Grid.Row="1" Grid.Column="7" BackgroundColor="LightGray"/>
+                        <Button HorizontalOptions="FillAndExpand" Text="3" TextColor="Black" x:Name="T6button5" Clicked="T6button_Clicked" Grid.Row="1" Grid.Column="9" BackgroundColor="LightGray"/>
+                        <Button HorizontalOptions="FillAndExpand" Text="11" TextColor="Black" x:Name="T6button6" Clicked="T6button_Clicked" Grid.Row="1" Grid.Column="11" BackgroundColor="LightGray"/>
+                        <Button HorizontalOptions="FillAndExpand" Text="15" TextColor="Black" x:Name="T6button7" Clicked="T6button_Clicked" Grid.Row="1" Grid.Column="13" BackgroundColor="LightGray"/>
+                        <Button HorizontalOptions="FillAndExpand" Text="13" TextColor="Black" x:Name="T6button8" Clicked="T6button_Clicked" Grid.Row="1" Grid.Column="15" BackgroundColor="LightGray"/>
+                        <Button HorizontalOptions="FillAndExpand" Text="4" TextColor="Black" x:Name="T6button9" Clicked="T6button_Clicked" Grid.Row="1" Grid.Column="17" BackgroundColor="LightGray"/>
+                        <Button HorizontalOptions="FillAndExpand" Text="6" TextColor="Black" x:Name="T6button10" Clicked="T6button_Clicked" Grid.Row="1" Grid.Column="19" BackgroundColor="LightGray"/>
                     </StackLayout>
                 </ScrollView>
 
