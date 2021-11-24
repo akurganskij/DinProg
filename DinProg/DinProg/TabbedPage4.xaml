@@ -8,11 +8,114 @@
         <ScrollView>
             <StackLayout>
                 <Label Margin="7" FontSize="Large" FontAttributes="Bold" HorizontalTextAlignment="Center" Text="Найбільша закономірна підпослідовність."/>
-                <Label Margin="7" FontSize="Medium" Text="Найбільша закономірна підпослідовність – це підпослідовність, кожний елемент якої підпорядковуються певному правилу. Найчастіше трапляється найбільша зростаюча підпослідовність."/>
-                <Label Margin="7" FontSize="Medium" Text="Для розв'язання такої задачі візьмемо додатковий масив, у який будемо додавати розмір закономірної підпослідовності, так для першого елемента це буде 1, якщо перший елемент можна використовувати. Для подальшого заповнення масиву знайдемо максимум з попередніх елементів цього масиву, для яких виконується закономірність. Якщо таких елементів немає, то значення дорівнює 1."/>
-                <Label Text=""/>
-                <Label Text=""/>
+                <Label Margin="7" FontSize="Medium" Text="Найбільша закономірна підпослідовність – це підпослідовність, кожний елемент якої підпорядковуються певному правилу. Найчастіше трапляється знайти довжину найбільшої зростаючої підпослідовності." />
+                <Label Margin="7" FontSize="Medium" Text="Для розв'язання такої задачі візьмемо додатковий масив, у який будемо додавати розмір закономірної підпослідовності, так для першого елемента це буде 1, якщо перший елемент можна використовувати. Для подальшого заповнення масиву знайдемо максимум з попередніх елементів цього масиву, для яких виконується закономірність. Якщо таких елементів немає, то значення дорівнює 1." />
+                <Label Text="Розглянемо на прикладі:"/>
+                <Label Text="Є послідовність довжиною 8:"/>
+                <Grid Margin="5">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1"/>
+                        <RowDefinition />
+                        <RowDefinition Height="1"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1" />
+                        <ColumnDefinition />
+                        <ColumnDefinition Width="1" />
+                        <ColumnDefinition />
+                        <ColumnDefinition Width="1" />
+                        <ColumnDefinition />
+                        <ColumnDefinition Width="1" />
+                        <ColumnDefinition />
+                        <ColumnDefinition Width="1" />
+                        <ColumnDefinition />
+                        <ColumnDefinition Width="1" />
+                        <ColumnDefinition />
+                        <ColumnDefinition Width="1" />
+                        <ColumnDefinition />
+                        <ColumnDefinition Width="1" />
+                        <ColumnDefinition />
+                        <ColumnDefinition Width="1" />
+                    </Grid.ColumnDefinitions>
+                    <BoxView BackgroundColor="Black" Grid.ColumnSpan="17" Grid.Row="0" />
+                    <BoxView BackgroundColor="Black" Grid.ColumnSpan="17" Grid.Row="2" />
 
+                    <BoxView BackgroundColor="Black" Grid.Column="0" Grid.RowSpan="3"/>
+                    <BoxView BackgroundColor="Black" Grid.Column="2" Grid.RowSpan="3"/>
+                    <BoxView BackgroundColor="Black" Grid.Column="4" Grid.RowSpan="3"/>
+                    <BoxView BackgroundColor="Black" Grid.Column="6" Grid.RowSpan="3"/>
+                    <BoxView BackgroundColor="Black" Grid.Column="8" Grid.RowSpan="3"/>
+                    <BoxView BackgroundColor="Black" Grid.Column="10" Grid.RowSpan="3"/>
+                    <BoxView BackgroundColor="Black" Grid.Column="12" Grid.RowSpan="3"/>
+                    <BoxView BackgroundColor="Black" Grid.Column="14" Grid.RowSpan="3"/>
+                    <BoxView BackgroundColor="Black" Grid.Column="16" Grid.RowSpan="3"/>
+
+                    <Label Grid.Row="1" Grid.Column="1" Text="1" FontSize="Medium"  HorizontalTextAlignment="Center" />
+                    <Label Grid.Row="1" Grid.Column="3" Text="4" FontSize="Medium"  HorizontalTextAlignment="Center" />
+                    <Label Grid.Row="1" Grid.Column="5" Text="3" FontSize="Medium"  HorizontalTextAlignment="Center" />
+                    <Label Grid.Row="1" Grid.Column="7" Text="19" FontSize="Medium"  HorizontalTextAlignment="Center" />
+                    <Label Grid.Row="1" Grid.Column="9" Text="4" FontSize="Medium"  HorizontalTextAlignment="Center" />
+                    <Label Grid.Row="1" Grid.Column="11" Text="6" FontSize="Medium"  HorizontalTextAlignment="Center" />
+                    <Label Grid.Row="1" Grid.Column="13" Text="10" FontSize="Medium"  HorizontalTextAlignment="Center" />
+                    <Label Grid.Row="1" Grid.Column="15" Text="7" FontSize="Medium"  HorizontalTextAlignment="Center" />
+                </Grid>
+                
+                <Label Text="Знайти довжину найбільшої спільної підпослідовності"/>
+                <Label Text="Візьмемо масив з 8 елементів, у кожен з яких запишемо довжину зростаючої підпослідовності для відповідного елемента послідовності."/>
+                <Label Text="Для 1-го елемента це буде 1, через те, що немає жодного елемента до нього."/>
+                <Label Text="Для 2-го елемента маємо єдиний елемент менший за нього, тому беремо значення цього елемента і додаємо 1."/>
+                <Label Text="Для 3-го елемента маємо єдиний елемент менший за нього, тому беремо значення цього елемента і додаємо 1."/>
+                <Label Text="Для інших елементів маємо декілька елементів менших за них, тому беремо значення елемента меншого за значення у комірці, для якого значення довжини підпослідовності є найбільшим, і додаємо 1."/>
+                <Grid Margin="5">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1"/>
+                        <RowDefinition />
+                        <RowDefinition Height="1"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1" />
+                        <ColumnDefinition />
+                        <ColumnDefinition Width="1" />
+                        <ColumnDefinition />
+                        <ColumnDefinition Width="1" />
+                        <ColumnDefinition />
+                        <ColumnDefinition Width="1" />
+                        <ColumnDefinition />
+                        <ColumnDefinition Width="1" />
+                        <ColumnDefinition />
+                        <ColumnDefinition Width="1" />
+                        <ColumnDefinition />
+                        <ColumnDefinition Width="1" />
+                        <ColumnDefinition />
+                        <ColumnDefinition Width="1" />
+                        <ColumnDefinition />
+                        <ColumnDefinition Width="1" />
+                    </Grid.ColumnDefinitions>
+                    <BoxView BackgroundColor="Black" Grid.ColumnSpan="17" Grid.Row="0" />
+                    <BoxView BackgroundColor="Black" Grid.ColumnSpan="17" Grid.Row="2" />
+
+                    <BoxView BackgroundColor="Black" Grid.Column="0" Grid.RowSpan="3"/>
+                    <BoxView BackgroundColor="Black" Grid.Column="2" Grid.RowSpan="3"/>
+                    <BoxView BackgroundColor="Black" Grid.Column="4" Grid.RowSpan="3"/>
+                    <BoxView BackgroundColor="Black" Grid.Column="6" Grid.RowSpan="3"/>
+                    <BoxView BackgroundColor="Black" Grid.Column="8" Grid.RowSpan="3"/>
+                    <BoxView BackgroundColor="Black" Grid.Column="10" Grid.RowSpan="3"/>
+                    <BoxView BackgroundColor="Black" Grid.Column="12" Grid.RowSpan="3"/>
+                    <BoxView BackgroundColor="Black" Grid.Column="14" Grid.RowSpan="3"/>
+                    <BoxView BackgroundColor="Black" Grid.Column="16" Grid.RowSpan="3"/>
+
+                    <Label Grid.Row="1" Grid.Column="1" Text="1" FontSize="Medium"  HorizontalTextAlignment="Center" />
+                    <Label Grid.Row="1" Grid.Column="3" Text="4" FontSize="Medium"  HorizontalTextAlignment="Center" />
+                    <Label Grid.Row="1" Grid.Column="5" Text="3" FontSize="Medium"  HorizontalTextAlignment="Center" />
+                    <Label Grid.Row="1" Grid.Column="7" Text="19" FontSize="Medium"  HorizontalTextAlignment="Center" />
+                    <Label Grid.Row="1" Grid.Column="9" Text="4" FontSize="Medium"  HorizontalTextAlignment="Center" />
+                    <Label Grid.Row="1" Grid.Column="11" Text="6" FontSize="Medium"  HorizontalTextAlignment="Center" />
+                    <Label Grid.Row="1" Grid.Column="13" Text="10" FontSize="Medium"  HorizontalTextAlignment="Center" />
+                    <Label Grid.Row="1" Grid.Column="15" Text="7" FontSize="Medium"  HorizontalTextAlignment="Center" />
+                </Grid>
+                <Label Text="Тепер знаходимо найбільше значення в масиві – довжину найбільшої підпослідовності."/>
+
+                
                 <Line/>
             </StackLayout>
         </ScrollView>
