@@ -78,7 +78,7 @@
         FlyoutDisplayOptions="AsMultipleItems" will create a separate flyout item for each child element    
         https://docs.microsoft.com/dotnet/api/xamarin.forms.shellgroupitem.flyoutdisplayoptions?view=xamarin-forms
     -->
-    <FlyoutItem Title="Main">
+    <FlyoutItem Title="Головна">
         <ShellContent>
             <ContentPage>
                 <StackLayout VerticalOptions="Center">
@@ -87,6 +87,28 @@
                     <Line  Margin="10"/>
                     <Button Clicked="Button_Clicked" Text="Розпочати" FontSize="Large"/>
                 </StackLayout>
+            </ContentPage>
+        </ShellContent>
+    </FlyoutItem>
+    <FlyoutItem Title="Структура">
+        <ShellContent>
+            <ContentPage>
+                <ScrollView>
+                    <StackLayout>
+                        <Button BackgroundColor="Beige" Text="Початкові відомості про динамічне програмування" Clicked="Button_Clicked_1" BorderColor="#9ceac4" BorderWidth="3" TextColor="Black"/>
+                        <Button BackgroundColor="Beige" Text="Заповнення лінійного масиву, знаходження рекурсивної формули" Clicked="Button_Clicked_2" BorderColor="#9ceac4" BorderWidth="3" TextColor="Black"/>
+                        <Button BackgroundColor="Beige" Text="Пошук шляхів у таблицях" Clicked="Button_Clicked_3" BorderColor="#9ceac4" BorderWidth="3" TextColor="Black"/>
+                        <Button BackgroundColor="Beige" Text="Найбільша закономірна підпослідовність" Clicked="Button_Clicked_4" BorderColor="#9ceac4" BorderWidth="3" TextColor="Black"/>
+                        <Button BackgroundColor="Beige" Text="Задача «про рюкзак»" Clicked="Button_Clicked_5" BorderColor="#9ceac4" BorderWidth="3" TextColor="Black"/>
+                        <Button BackgroundColor="Beige" Text="Знаходження найбільшої спільної підпослідовності"  BorderColor="#9ceac4" BorderWidth="3" TextColor="Black"/>
+                        <Button BackgroundColor="Beige" Text="Знаходження редакційної відстані"  BorderColor="#9ceac4" BorderWidth="3" TextColor="Black"/>
+                        <Button BackgroundColor="Beige" Text="Порядок перемноження матриць"  BorderColor="#9ceac4" BorderWidth="3" TextColor="Black"/>
+                        <Button BackgroundColor="Beige" Text="Алгоритм Флойда-Уоршелла"  BorderColor="#9ceac4" BorderWidth="3" TextColor="Black"/>
+                        <Button BackgroundColor="Beige" Text="Алгоритм Беллмана-Форда"  BorderColor="#9ceac4" BorderWidth="3" TextColor="Black"/>
+                        <Button BackgroundColor="Beige" Text="Знаходження максимальної незалежної кількості вершин у дереві"  BorderColor="#9ceac4" BorderWidth="3" TextColor="Black"/>
+                        <Button BackgroundColor="Beige" Text="Задачі на замощення"  BorderColor="#9ceac4" BorderWidth="3" TextColor="Black"/>
+                    </StackLayout>
+                </ScrollView>
             </ContentPage>
         </ShellContent>
     </FlyoutItem>
