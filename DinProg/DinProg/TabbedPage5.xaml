@@ -295,7 +295,7 @@
                 <Label Margin="7" FontSize="Medium" Text="Вхідні дані містять декілька тестів. Останній рядок містить 0 0 і не опрацьовується."/>
                 <Label Margin="7" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center" Text="Вихідні дані"/>
                 <Label Margin="7" FontSize="Medium" Text="Для кожного тесту виведіть у окремому рядку сумарне значення вартостей вхідних квитків на вечірки, а також загальну суму отриманого задоволення. Числа, що виводяться, слід відокремлювати пропуском."/>
-                <Label Margin="7" FontSize="Medium" Text=""/>
+                <Label Margin="7" FontSize="Medium" Text="Заповніть масив відповідно до наступних значень:"/>
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition />
@@ -370,29 +370,29 @@
                     <Label Margin="7" FontSize="Medium" Text="17" Grid.Column="13" Grid.Row="1" HorizontalTextAlignment="Center"/>
                     <Label Margin="7" FontSize="Medium" Text="18" Grid.Column="15" Grid.Row="1" HorizontalTextAlignment="Center"/>
 
-                    <Editor FontSize="Medium" Grid.Column="3" Grid.Row="3" x:Name="L5T1Line1Edit1" />
-                    <Editor FontSize="Medium" Grid.Column="5" Grid.Row="3" x:Name="L5T1Line1Edit2" />
-                    <Editor FontSize="Medium" Grid.Column="7" Grid.Row="3" x:Name="L5T1Line1Edit3" />
-                    <Editor FontSize="Medium" Grid.Column="9" Grid.Row="3" x:Name="L5T1Line1Edit4" />
-                    <Editor FontSize="Medium" Grid.Column="11" Grid.Row="3" x:Name="L5T1Line1Edit5" />
-                    <Editor FontSize="Medium" Grid.Column="13" Grid.Row="3" x:Name="L5T1Line1Edit6" />
-                    <Editor FontSize="Medium" Grid.Column="15" Grid.Row="3" x:Name="L5T1Line1Edit7" />
+                    <Editor Keyboard="Numeric" FontSize="Medium" Grid.Column="3" Grid.Row="3" x:Name="L5T1Line1Edit1" />
+                    <Editor Keyboard="Numeric" FontSize="Medium" Grid.Column="5" Grid.Row="3" x:Name="L5T1Line1Edit2" />
+                    <Editor Keyboard="Numeric" FontSize="Medium" Grid.Column="7" Grid.Row="3" x:Name="L5T1Line1Edit3" />
+                    <Editor Keyboard="Numeric" FontSize="Medium" Grid.Column="9" Grid.Row="3" x:Name="L5T1Line1Edit4" />
+                    <Editor Keyboard="Numeric" FontSize="Medium" Grid.Column="11" Grid.Row="3" x:Name="L5T1Line1Edit5" />
+                    <Editor Keyboard="Numeric" FontSize="Medium" Grid.Column="13" Grid.Row="3" x:Name="L5T1Line1Edit6" />
+                    <Editor Keyboard="Numeric" FontSize="Medium" Grid.Column="15" Grid.Row="3" x:Name="L5T1Line1Edit7" />
 
-                    <Editor FontSize="Medium" Grid.Column="3" Grid.Row="5" x:Name="L5T1Line2Edit1" />
-                    <Editor FontSize="Medium" Grid.Column="5" Grid.Row="5" x:Name="L5T1Line2Edit2" />
-                    <Editor FontSize="Medium" Grid.Column="7" Grid.Row="5" x:Name="L5T1Line2Edit3" />
-                    <Editor FontSize="Medium" Grid.Column="9" Grid.Row="5" x:Name="L5T1Line2Edit4" />
-                    <Editor FontSize="Medium" Grid.Column="11" Grid.Row="5" x:Name="L5T1Line2Edit5" />
-                    <Editor FontSize="Medium" Grid.Column="13" Grid.Row="5" x:Name="L5T1Line2Edit6" />
-                    <Editor FontSize="Medium" Grid.Column="15" Grid.Row="5" x:Name="L5T1Line2Edit7" />
+                    <Editor Keyboard="Numeric" FontSize="Medium" Grid.Column="3" Grid.Row="5" x:Name="L5T1Line2Edit1" />
+                    <Editor Keyboard="Numeric" FontSize="Medium" Grid.Column="5" Grid.Row="5" x:Name="L5T1Line2Edit2" />
+                    <Editor Keyboard="Numeric" FontSize="Medium" Grid.Column="7" Grid.Row="5" x:Name="L5T1Line2Edit3" />
+                    <Editor Keyboard="Numeric" FontSize="Medium" Grid.Column="9" Grid.Row="5" x:Name="L5T1Line2Edit4" />
+                    <Editor Keyboard="Numeric" FontSize="Medium" Grid.Column="11" Grid.Row="5" x:Name="L5T1Line2Edit5" />
+                    <Editor Keyboard="Numeric" FontSize="Medium" Grid.Column="13" Grid.Row="5" x:Name="L5T1Line2Edit6" />
+                    <Editor Keyboard="Numeric" FontSize="Medium" Grid.Column="15" Grid.Row="5" x:Name="L5T1Line2Edit7" />
 
-                    <Editor FontSize="Medium" Grid.Column="3" Grid.Row="7" x:Name="L5T1Line3Edit1" />
-                    <Editor FontSize="Medium" Grid.Column="5" Grid.Row="7" x:Name="L5T1Line3Edit2" />
-                    <Editor FontSize="Medium" Grid.Column="7" Grid.Row="7" x:Name="L5T1Line3Edit3" />
-                    <Editor FontSize="Medium" Grid.Column="9" Grid.Row="7" x:Name="L5T1Line3Edit4" />
-                    <Editor FontSize="Medium" Grid.Column="11" Grid.Row="7" x:Name="L5T1Line3Edit5" />
-                    <Editor FontSize="Medium" Grid.Column="13" Grid.Row="7" x:Name="L5T1Line3Edit6" />
-                    <Editor FontSize="Medium" Grid.Column="15" Grid.Row="7" x:Name="L5T1Line3Edit7" />
+                    <Editor Keyboard="Numeric" FontSize="Medium" Grid.Column="3" Grid.Row="7" x:Name="L5T1Line3Edit1" />
+                    <Editor Keyboard="Numeric" FontSize="Medium" Grid.Column="5" Grid.Row="7" x:Name="L5T1Line3Edit2" />
+                    <Editor Keyboard="Numeric" FontSize="Medium" Grid.Column="7" Grid.Row="7" x:Name="L5T1Line3Edit3" />
+                    <Editor Keyboard="Numeric" FontSize="Medium" Grid.Column="9" Grid.Row="7" x:Name="L5T1Line3Edit4" />
+                    <Editor Keyboard="Numeric" FontSize="Medium" Grid.Column="11" Grid.Row="7" x:Name="L5T1Line3Edit5" />
+                    <Editor Keyboard="Numeric" FontSize="Medium" Grid.Column="13" Grid.Row="7" x:Name="L5T1Line3Edit6" />
+                    <Editor Keyboard="Numeric" FontSize="Medium" Grid.Column="15" Grid.Row="7" x:Name="L5T1Line3Edit7" />
                 </Grid>
                 <Grid Margin="5">
                     <Grid.RowDefinitions>
@@ -450,32 +450,32 @@
                     <Label Margin="7" FontSize="Medium" Text="25" Grid.Column="13" Grid.Row="1" HorizontalTextAlignment="Center"/>
                     <Label Margin="7" FontSize="Medium" Text="26" Grid.Column="15" Grid.Row="1" HorizontalTextAlignment="Center"/>
 
-                    <Editor FontSize="Medium" Grid.Column="1" Grid.Row="3" x:Name="L5T1Line1Edit8" />
-                    <Editor FontSize="Medium" Grid.Column="3" Grid.Row="3" x:Name="L5T1Line1Edit9" />
-                    <Editor FontSize="Medium" Grid.Column="5" Grid.Row="3" x:Name="L5T1Line1Edit10" />
-                    <Editor FontSize="Medium" Grid.Column="7" Grid.Row="3" x:Name="L5T1Line1Edit11" />
-                    <Editor FontSize="Medium" Grid.Column="9" Grid.Row="3" x:Name="L5T1Line1Edit12" />
-                    <Editor FontSize="Medium" Grid.Column="11" Grid.Row="3" x:Name="L5T1Line1Edit13" />
-                    <Editor FontSize="Medium" Grid.Column="13" Grid.Row="3" x:Name="L5T1Line1Edit14" />
-                    <Editor FontSize="Medium" Grid.Column="15" Grid.Row="3" x:Name="L5T1Line1Edit15" />
+                    <Editor Keyboard="Numeric" FontSize="Medium" Grid.Column="1" Grid.Row="3" x:Name="L5T1Line1Edit8" />
+                    <Editor Keyboard="Numeric" FontSize="Medium" Grid.Column="3" Grid.Row="3" x:Name="L5T1Line1Edit9" />
+                    <Editor Keyboard="Numeric" FontSize="Medium" Grid.Column="5" Grid.Row="3" x:Name="L5T1Line1Edit10" />
+                    <Editor Keyboard="Numeric" FontSize="Medium" Grid.Column="7" Grid.Row="3" x:Name="L5T1Line1Edit11" />
+                    <Editor Keyboard="Numeric" FontSize="Medium" Grid.Column="9" Grid.Row="3" x:Name="L5T1Line1Edit12" />
+                    <Editor Keyboard="Numeric" FontSize="Medium" Grid.Column="11" Grid.Row="3" x:Name="L5T1Line1Edit13" />
+                    <Editor Keyboard="Numeric" FontSize="Medium" Grid.Column="13" Grid.Row="3" x:Name="L5T1Line1Edit14" />
+                    <Editor Keyboard="Numeric" FontSize="Medium" Grid.Column="15" Grid.Row="3" x:Name="L5T1Line1Edit15" />
 
-                    <Editor FontSize="Medium" Grid.Column="1" Grid.Row="5" x:Name="L5T1Line2Edit8" />
-                    <Editor FontSize="Medium" Grid.Column="3" Grid.Row="5" x:Name="L5T1Line2Edit9" />
-                    <Editor FontSize="Medium" Grid.Column="5" Grid.Row="5" x:Name="L5T1Line2Edit10" />
-                    <Editor FontSize="Medium" Grid.Column="7" Grid.Row="5" x:Name="L5T1Line2Edit11" />
-                    <Editor FontSize="Medium" Grid.Column="9" Grid.Row="5" x:Name="L5T1Line2Edit12" />
-                    <Editor FontSize="Medium" Grid.Column="11" Grid.Row="5" x:Name="L5T1Line2Edit13" />
-                    <Editor FontSize="Medium" Grid.Column="13" Grid.Row="5" x:Name="L5T1Line2Edit14" />
-                    <Editor FontSize="Medium" Grid.Column="15" Grid.Row="5" x:Name="L5T1Line2Edit15" />
+                    <Editor Keyboard="Numeric" FontSize="Medium" Grid.Column="1" Grid.Row="5" x:Name="L5T1Line2Edit8" />
+                    <Editor Keyboard="Numeric" FontSize="Medium" Grid.Column="3" Grid.Row="5" x:Name="L5T1Line2Edit9" />
+                    <Editor Keyboard="Numeric" FontSize="Medium" Grid.Column="5" Grid.Row="5" x:Name="L5T1Line2Edit10" />
+                    <Editor Keyboard="Numeric" FontSize="Medium" Grid.Column="7" Grid.Row="5" x:Name="L5T1Line2Edit11" />
+                    <Editor Keyboard="Numeric" FontSize="Medium" Grid.Column="9" Grid.Row="5" x:Name="L5T1Line2Edit12" />
+                    <Editor Keyboard="Numeric" FontSize="Medium" Grid.Column="11" Grid.Row="5" x:Name="L5T1Line2Edit13" />
+                    <Editor Keyboard="Numeric" FontSize="Medium" Grid.Column="13" Grid.Row="5" x:Name="L5T1Line2Edit14" />
+                    <Editor Keyboard="Numeric" FontSize="Medium" Grid.Column="15" Grid.Row="5" x:Name="L5T1Line2Edit15" />
 
-                    <Editor FontSize="Medium" Grid.Column="1" Grid.Row="7" x:Name="L5T1Line3Edit8" />
-                    <Editor FontSize="Medium" Grid.Column="3" Grid.Row="7" x:Name="L5T1Line3Edit9" />
-                    <Editor FontSize="Medium" Grid.Column="5" Grid.Row="7" x:Name="L5T1Line3Edit10" />
-                    <Editor FontSize="Medium" Grid.Column="7" Grid.Row="7" x:Name="L5T1Line3Edit11" />
-                    <Editor FontSize="Medium" Grid.Column="9" Grid.Row="7" x:Name="L5T1Line3Edit12" />
-                    <Editor FontSize="Medium" Grid.Column="11" Grid.Row="7" x:Name="L5T1Line3Edit13" />
-                    <Editor FontSize="Medium" Grid.Column="13" Grid.Row="7" x:Name="L5T1Line3Edit14" />
-                    <Editor FontSize="Medium" Grid.Column="15" Grid.Row="7" x:Name="L5T1Line3Edit15" />
+                    <Editor Keyboard="Numeric" FontSize="Medium" Grid.Column="1" Grid.Row="7" x:Name="L5T1Line3Edit8" />
+                    <Editor Keyboard="Numeric" FontSize="Medium" Grid.Column="3" Grid.Row="7" x:Name="L5T1Line3Edit9" />
+                    <Editor Keyboard="Numeric" FontSize="Medium" Grid.Column="5" Grid.Row="7" x:Name="L5T1Line3Edit10" />
+                    <Editor Keyboard="Numeric" FontSize="Medium" Grid.Column="7" Grid.Row="7" x:Name="L5T1Line3Edit11" />
+                    <Editor Keyboard="Numeric" FontSize="Medium" Grid.Column="9" Grid.Row="7" x:Name="L5T1Line3Edit12" />
+                    <Editor Keyboard="Numeric" FontSize="Medium" Grid.Column="11" Grid.Row="7" x:Name="L5T1Line3Edit13" />
+                    <Editor Keyboard="Numeric" FontSize="Medium" Grid.Column="13" Grid.Row="7" x:Name="L5T1Line3Edit14" />
+                    <Editor Keyboard="Numeric" FontSize="Medium" Grid.Column="15" Grid.Row="7" x:Name="L5T1Line3Edit15" />
                 </Grid>
                 <Grid Margin="5">
                     <Grid.RowDefinitions>
@@ -524,41 +524,41 @@
                     <BoxView BackgroundColor="Black" Grid.Column="14" Grid.RowSpan="9" />
                     <BoxView BackgroundColor="Black" Grid.Column="16" Grid.RowSpan="9" />
 
-                    <Label Margin="7" FontSize="Medium" Text="19" Grid.Column="1" Grid.Row="1" HorizontalTextAlignment="Center"/>
-                    <Label Margin="7" FontSize="Medium" Text="20" Grid.Column="3" Grid.Row="1" HorizontalTextAlignment="Center"/>
-                    <Label Margin="7" FontSize="Medium" Text="21" Grid.Column="5" Grid.Row="1" HorizontalTextAlignment="Center"/>
-                    <Label Margin="7" FontSize="Medium" Text="22" Grid.Column="7" Grid.Row="1" HorizontalTextAlignment="Center"/>
-                    <Label Margin="7" FontSize="Medium" Text="23" Grid.Column="9" Grid.Row="1" HorizontalTextAlignment="Center"/>
-                    <Label Margin="7" FontSize="Medium" Text="24" Grid.Column="11" Grid.Row="1" HorizontalTextAlignment="Center"/>
-                    <Label Margin="7" FontSize="Medium" Text="25" Grid.Column="13" Grid.Row="1" HorizontalTextAlignment="Center"/>
-                    <Label Margin="7" FontSize="Medium" Text="26" Grid.Column="15" Grid.Row="1" HorizontalTextAlignment="Center"/>
+                    <Label Margin="7" FontSize="Medium" Text="27" Grid.Column="1" Grid.Row="1" HorizontalTextAlignment="Center"/>
+                    <Label Margin="7" FontSize="Medium" Text="28" Grid.Column="3" Grid.Row="1" HorizontalTextAlignment="Center"/>
+                    <Label Margin="7" FontSize="Medium" Text="29" Grid.Column="5" Grid.Row="1" HorizontalTextAlignment="Center"/>
+                    <Label Margin="7" FontSize="Medium" Text="30" Grid.Column="7" Grid.Row="1" HorizontalTextAlignment="Center"/>
+                    <Label Margin="7" FontSize="Medium" Text="31" Grid.Column="9" Grid.Row="1" HorizontalTextAlignment="Center"/>
+                    <Label Margin="7" FontSize="Medium" Text="32" Grid.Column="11" Grid.Row="1" HorizontalTextAlignment="Center"/>
+                    <Label Margin="7" FontSize="Medium" Text="33" Grid.Column="13" Grid.Row="1" HorizontalTextAlignment="Center"/>
+                    <Label Margin="7" FontSize="Medium" Text="34" Grid.Column="15" Grid.Row="1" HorizontalTextAlignment="Center"/>
 
-                    <Editor FontSize="Medium" Grid.Column="1" Grid.Row="3" x:Name="L5T1Line1Edit16" />
-                    <Editor FontSize="Medium" Grid.Column="3" Grid.Row="3" x:Name="L5T1Line1Edit17" />
-                    <Editor FontSize="Medium" Grid.Column="5" Grid.Row="3" x:Name="L5T1Line1Edit18" />
-                    <Editor FontSize="Medium" Grid.Column="7" Grid.Row="3" x:Name="L5T1Line1Edit19" />
-                    <Editor FontSize="Medium" Grid.Column="9" Grid.Row="3" x:Name="L5T1Line1Edit20" />
-                    <Editor FontSize="Medium" Grid.Column="11" Grid.Row="3" x:Name="L5T1Line1Edit21" />
-                    <Editor FontSize="Medium" Grid.Column="13" Grid.Row="3" x:Name="L5T1Line1Edit22" />
-                    <Editor FontSize="Medium" Grid.Column="15" Grid.Row="3" x:Name="L5T1Line1Edit23" />
+                    <Editor Keyboard="Numeric" FontSize="Medium" Grid.Column="1" Grid.Row="3" x:Name="L5T1Line1Edit16" />
+                    <Editor Keyboard="Numeric" FontSize="Medium" Grid.Column="3" Grid.Row="3" x:Name="L5T1Line1Edit17" />
+                    <Editor Keyboard="Numeric" FontSize="Medium" Grid.Column="5" Grid.Row="3" x:Name="L5T1Line1Edit18" />
+                    <Editor Keyboard="Numeric" FontSize="Medium" Grid.Column="7" Grid.Row="3" x:Name="L5T1Line1Edit19" />
+                    <Editor Keyboard="Numeric" FontSize="Medium" Grid.Column="9" Grid.Row="3" x:Name="L5T1Line1Edit20" />
+                    <Editor Keyboard="Numeric" FontSize="Medium" Grid.Column="11" Grid.Row="3" x:Name="L5T1Line1Edit21" />
+                    <Editor Keyboard="Numeric" FontSize="Medium" Grid.Column="13" Grid.Row="3" x:Name="L5T1Line1Edit22" />
+                    <Editor Keyboard="Numeric" FontSize="Medium" Grid.Column="15" Grid.Row="3" x:Name="L5T1Line1Edit23" />
 
-                    <Editor FontSize="Medium" Grid.Column="1" Grid.Row="5" x:Name="L5T1Line2Edit16" />
-                    <Editor FontSize="Medium" Grid.Column="3" Grid.Row="5" x:Name="L5T1Line2Edit17" />
-                    <Editor FontSize="Medium" Grid.Column="5" Grid.Row="5" x:Name="L5T1Line2Edit18" />
-                    <Editor FontSize="Medium" Grid.Column="7" Grid.Row="5" x:Name="L5T1Line2Edit19" />
-                    <Editor FontSize="Medium" Grid.Column="9" Grid.Row="5" x:Name="L5T1Line2Edit20" />
-                    <Editor FontSize="Medium" Grid.Column="11" Grid.Row="5" x:Name="L5T1Line2Edit21" />
-                    <Editor FontSize="Medium" Grid.Column="13" Grid.Row="5" x:Name="L5T1Line2Edit22" />
-                    <Editor FontSize="Medium" Grid.Column="15" Grid.Row="5" x:Name="L5T1Line2Edit23" />
+                    <Editor Keyboard="Numeric" FontSize="Medium" Grid.Column="1" Grid.Row="5" x:Name="L5T1Line2Edit16" />
+                    <Editor Keyboard="Numeric" FontSize="Medium" Grid.Column="3" Grid.Row="5" x:Name="L5T1Line2Edit17" />
+                    <Editor Keyboard="Numeric" FontSize="Medium" Grid.Column="5" Grid.Row="5" x:Name="L5T1Line2Edit18" />
+                    <Editor Keyboard="Numeric" FontSize="Medium" Grid.Column="7" Grid.Row="5" x:Name="L5T1Line2Edit19" />
+                    <Editor Keyboard="Numeric" FontSize="Medium" Grid.Column="9" Grid.Row="5" x:Name="L5T1Line2Edit20" />
+                    <Editor Keyboard="Numeric" FontSize="Medium" Grid.Column="11" Grid.Row="5" x:Name="L5T1Line2Edit21" />
+                    <Editor Keyboard="Numeric" FontSize="Medium" Grid.Column="13" Grid.Row="5" x:Name="L5T1Line2Edit22" />
+                    <Editor Keyboard="Numeric" FontSize="Medium" Grid.Column="15" Grid.Row="5" x:Name="L5T1Line2Edit23" />
 
-                    <Editor FontSize="Medium" Grid.Column="1" Grid.Row="7" x:Name="L5T1Line3Edit16" />
-                    <Editor FontSize="Medium" Grid.Column="3" Grid.Row="7" x:Name="L5T1Line3Edit17" />
-                    <Editor FontSize="Medium" Grid.Column="5" Grid.Row="7" x:Name="L5T1Line3Edit18" />
-                    <Editor FontSize="Medium" Grid.Column="7" Grid.Row="7" x:Name="L5T1Line3Edit19" />
-                    <Editor FontSize="Medium" Grid.Column="9" Grid.Row="7" x:Name="L5T1Line3Edit20" />
-                    <Editor FontSize="Medium" Grid.Column="11" Grid.Row="7" x:Name="L5T1Line3Edit21" />
-                    <Editor FontSize="Medium" Grid.Column="13" Grid.Row="7" x:Name="L5T1Line3Edit22" />
-                    <Editor FontSize="Medium" Grid.Column="15" Grid.Row="7" x:Name="L5T1Line3Edit23" />
+                    <Editor Keyboard="Numeric" FontSize="Medium" Grid.Column="1" Grid.Row="7" x:Name="L5T1Line3Edit16" />
+                    <Editor Keyboard="Numeric" FontSize="Medium" Grid.Column="3" Grid.Row="7" x:Name="L5T1Line3Edit17" />
+                    <Editor Keyboard="Numeric" FontSize="Medium" Grid.Column="5" Grid.Row="7" x:Name="L5T1Line3Edit18" />
+                    <Editor Keyboard="Numeric" FontSize="Medium" Grid.Column="7" Grid.Row="7" x:Name="L5T1Line3Edit19" />
+                    <Editor Keyboard="Numeric" FontSize="Medium" Grid.Column="9" Grid.Row="7" x:Name="L5T1Line3Edit20" />
+                    <Editor Keyboard="Numeric" FontSize="Medium" Grid.Column="11" Grid.Row="7" x:Name="L5T1Line3Edit21" />
+                    <Editor Keyboard="Numeric" FontSize="Medium" Grid.Column="13" Grid.Row="7" x:Name="L5T1Line3Edit22" />
+                    <Editor Keyboard="Numeric" FontSize="Medium" Grid.Column="15" Grid.Row="7" x:Name="L5T1Line3Edit23" />
                 </Grid>
                 
                 <Label Margin="7" FontSize="Medium" x:Name="Lblforouttask1L5"/>

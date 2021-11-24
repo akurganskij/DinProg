@@ -7,7 +7,7 @@
     <ContentPage Title="Короткі відомості">
         <ScrollView>
             <StackLayout>
-                <Label Margin="7" FontSize="Large" FontAttributes="Bold" HorizontalTextAlignment="Center" Text="Пошук екстремального шляху." />
+                <Label Margin="7" FontSize="Large" FontAttributes="Bold" HorizontalTextAlignment="Center" Text="Пошук шляхів у таблицях." />
                 <Label Margin="7" FontSize="Medium" Text="Слово «екстремальний» у назві цього рівня може трохи перелякати або збити з пантелику, але воно не означає страшний, екстремальний шлях – це шлях, який має найменшу(найбільшу) довжину, або шлях, дотримуючись якого можна найбільше(найменше) отримати(втратити)." />
                 <Label Margin="7" FontSize="Medium" Text="У таких задачах треба працювати з таблицею чисел – двовимірним масивом. Знаходити суму, часткові суми, добуток… Розберемо задачу на знаходження шляху у двовимірному масиві:" />
                 <Label Margin="7" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center" Text="Задача «Черепашка»" />
